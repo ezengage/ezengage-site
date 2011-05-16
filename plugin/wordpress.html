@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Discuz!X 系统集成 &mdash; ezEngage 用户手册</title>
+    <title>WordPress 系统集成 &mdash; ezEngage 用户手册</title>
     <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript">
@@ -24,8 +24,7 @@
     <script type="text/javascript" src="../_static/translations.js"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="top" title="ezEngage 用户手册" href="../index.html" />
-    <link rel="next" title="phpwind 系统集成" href="phpwind.html" />
-    <link rel="prev" title="豆瓣配置指南" href="../provider/douban.html" />
+    <link rel="prev" title="phpwind 系统集成" href="phpwind.html" />
  
 
 <link rel="stylesheet" href="../_static/ezengage.css" type="text/css" />
@@ -37,10 +36,7 @@
       <ul>
         <li class="right" style="margin-right: 10px">
           <a href="phpwind.html" title="phpwind 系统集成"
-             accesskey="N">下一页</a></li>
-        <li class="right" >
-          <a href="../provider/douban.html" title="豆瓣配置指南"
-             accesskey="P">上一页</a> |</li>
+             accesskey="P">上一页</a></li>
     <li><a id="home-link" href="http://ezengage.com/">ezEngage 主页</a> &raquo;</li>
     
         <li><a href="../index.html">ezEngage 用户手册</a> &raquo;</li>
@@ -53,31 +49,31 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="discuz-x">
-<h1>Discuz!X 系统集成<a class="headerlink" href="#discuz-x" title="永久链接至标题">¶</a></h1>
+  <div class="section" id="wordpress">
+<h1>WordPress 系统集成<a class="headerlink" href="#wordpress" title="永久链接至标题">¶</a></h1>
 <div class="section" id="ezengage">
 <h2>创建并配置ezEngage应用<a class="headerlink" href="#ezengage" title="永久链接至标题">¶</a></h2>
 <p>如果你还没有注册 <a class="reference external" href="http://ezengage.com/signup/">ezEngage</a> , 请先注册并 <a class="reference internal" href="../how-to-use-ezengage.html#create-ezengage-app"><em>创建一个ezEngage 应用</em></a> 。</p>
 <p>在我们支持 <a class="reference internal" href="../provider/index.html#provider-list"><em>供应商列表</em></a> 中选择一个或多个，并做对应的配置。</p>
 </div>
-<div class="section" id="ezengage-discuz-x">
-<h2>安装ezEngage Discuz!X 插件<a class="headerlink" href="#ezengage-discuz-x" title="永久链接至标题">¶</a></h2>
+<div class="section" id="ezengage-wordpress">
+<h2>安装ezEngage WordPress 插件<a class="headerlink" href="#ezengage-wordpress" title="永久链接至标题">¶</a></h2>
 <div class="section" id="id2">
 <h3>系统要求<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
-<p>插件目前只支持DiscuzX! 1.5 系统。
+<p>插件目前只支持`WordPress` 3.0 以上版本。
 PHP环境需要支持 <cite>fsockopen</cite> 函数。</p>
 </div>
 <div class="section" id="id3">
-<h3>下载<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
-<p>插件的最新版本版本为0.2.3, 下载地址为</p>
-<p><a class="reference external" href="https://github.com/ezengage/discuz-ezengage/downloads/ezengage-for-discuzx-0.2.3.zip">https://github.com/ezengage/discuz-ezengage/downloads/ezengage-for-discuzx-0.2.3.zip</a></p>
+<h3>后台安装<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
+<p>你可以直接在Wordpress 后台搜索 ezengage 插件直接安装。</p>
 </div>
 <div class="section" id="id4">
-<h3>安装<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
+<h3>手工安装<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
+<p>你也可以手工下载并安装。</p>
 <ol class="arabic simple">
-<li>从上面的地址下载最新版本的插件。</li>
-<li>解压下载的文件，将upload目录下的内容上传你的Discuz X 安装目录。</li>
-<li>访问Discuz X 后台, 打开&#8221;插件&#8221; -&gt; &#8220;安装新插件&#8221; ，安装ezEngage (注意选择和你的站点编码匹配的版本)。</li>
+<li>访问 <a class="reference external" href="http://wordpress.org/extend/plugin/ezengage">http://wordpress.org/extend/plugin/ezengage</a> 下载最新版本。</li>
+<li>上传 <cite>ezengage</cite> 目录和其中的内容到你的 <cite>/wp-content/plugins/</cite> 目录。</li>
+<li>通过 <cite>插件</cite> 菜单激活 ezEngage 插件。</li>
 </ol>
 </div>
 <div class="section" id="id5">
@@ -85,17 +81,8 @@ PHP环境需要支持 <cite>fsockopen</cite> 函数。</p>
 <ol class="arabic">
 <li><p class="first">找到你在ezEngage网站创建的应用的App Domain, APP Id 和 App Key。(<a class="reference internal" href="../how-to-use-ezengage.html#find-ezengage-app-info"><em>在哪里可以找到应用信息?</em></a>)</p>
 </li>
-<li><p class="first">访问&#8221;插件&#8221;点击&#8221;ezEngage&#8221;, 然后点击&#8221;配置&#8221;, 将App Domain, App Id, App Key 填入参数设置。</p>
-<img alt="http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/img/discuzx-plugin-config.png" src="http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/img/discuzx-plugin-config.png" />
-</li>
-<li><p class="first">如果你希望用户能够不注册直接使用社交网络帐号登录，请启用自动注册。</p>
-</li>
-<li><p class="first">返回&#8221;插件&#8221;启用ezEngage 。</p>
-</li>
-<li><p class="first">请检查你网站URL设置(&#8220;全局&#8221;-&gt;&#8221;站点信息&#8221;-&gt;网站URL)设置是正确的。
-该地址必须以&#8217;/&#8217;结尾,指向你的网站首页。
-比如说你的网站是 <cite>http://bbs.example.com/</cite> 那就在网站URL 里面填入 <cite>http://bbs.example.com/</cite> 。</p>
-<img alt="http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/img/discuzx-plugin-site-url.png" src="http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/img/discuzx-plugin-site-url.png" />
+<li><p class="first">访问 <cite>设置&#8211;&gt; ezEngage</cite> 打开ezEngage 配置页面, 将App Domain, App Id, App Key 填入表单，勾选启用ezEngage并点击保存。</p>
+<img alt="http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/img/wordpress-plugin-config.png" src="http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/img/wordpress-plugin-config.png" />
 </li>
 </ol>
 <p>到这里，插件已经安装成功了。用户可以使用社交网络的帐号登录你的站点了。</p>
@@ -105,28 +92,36 @@ PHP环境需要支持 <cite>fsockopen</cite> 函数。</p>
 <h2>使用方法<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
 <div class="section" id="id7">
 <h3>社会化登录<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h3>
-<p>安装完成，在登录页,注册页和页面头部登录框左边会出现ezEngage 登录控件。
+<p>安装完成，在登录页,注册页,文章评论区域会出现ezEngage 登录控件。
 用户可以直接它们的社交网络和微博账号登录到你的站点。</p>
 <blockquote>
-<div><img alt="http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/img/discuzx-plugin-top.png" src="http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/img/discuzx-plugin-top.png" />
-<img alt="http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/img/discuzx-plugin-login.png" src="http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/img/discuzx-plugin-login.png" />
-<img alt="http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/img/discuzx-plugin-register.png" src="http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/img/discuzx-plugin-register.png" />
+<div><img alt="http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/img/wordpress-plugin-login.png" src="http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/img/wordpress-plugin-login.png" />
+<img alt="http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/img/wordpress-plugin-comment.png" src="http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/img/wordpress-plugin-comment.png" />
 </div></blockquote>
+<p>用户在从第三方登录完成后,系统会自动为他创建一个WordPress的用户,然后登录。需要注意的用户的Email是系统自动生成的假Email。</p>
 </div>
 <div class="section" id="id8">
 <h3>多账户绑定和管理<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h3>
-<p>插件支持一个Discuz用户绑定多个社交网络账号，比如说同时绑定新浪微博微博和腾讯微博账号到同一个Discuz账号。
-用户访问&#8221;设置&#8221;-&gt;&#8221;我绑定的账号&#8221;，来绑定多个帐号或者解除绑定。</p>
+<p>插件支持一个WordPress用户绑定多个社交网络账号，比如说同时绑定新浪微博微博和腾讯微博账号到同一个WordPress账号。</p>
+<p>用户可以访问 <cite>用户 &#8211;&gt; 第三方帐号</cite>, 绑定多个帐号或者解除绑定。以及设置是否同步文章到绑定的帐号上。</p>
 <blockquote>
-<div><img alt="http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/img/discuzx-plugin-accounts.png" src="http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/img/discuzx-plugin-accounts.png" />
+<div><img alt="http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/img/wordpress-plugin-accounts.png" src="http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/img/wordpress-plugin-accounts.png" />
 </div></blockquote>
 </div>
-<div class="section" id="id9">
-<h3>用户活动同步<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h3>
-<p>默认情况下，主题贴,日志,分享,记录会被同步到绑定的帐号上。</p>
-<p>比如说用户A绑定了新浪微博账号B, 那么A在在论坛发了一条贴后，系统会使用新浪微博账号B也发布这个帖子，并带有到论坛该帖子的链接。</p>
-<p>用户可以在 <em>我绑定的帐号</em> 页面修改同步哪些内容。</p>
 </div>
+<div class="section" id="id9">
+<h2>高级功能<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h2>
+<p>你可以在 <cite>设置 &#8211;&gt; EzEngage</cite> 界面修改登录界面的样式。
+可选的有 &#8220;链接&#8221;, &#8220;小图标&#8221; , &#8220;大图标&#8221;，以及&#8221;不显示，我要自己修改模版&#8221;。 如果你选择自己修改模版，你可以在模版中插入下面的代码显示一个ezEngage 登录界面.</p>
+<blockquote>
+<div><div class="highlight-python"><pre>&lt;?php ezengage_login_ui('small',  true); ?&gt;</pre>
+</div>
+</div></blockquote>
+<p>第一个参数的可选值有 &#8216;link&#8217;, &#8216;small&#8217;, &#8216;normal&#8217; 分别对应&#8221;链接&#8221;, &#8220;小图标&#8221;, &#8220;大图标&#8221;。第二个参数表示登录完成后是否返回当前页面， 可选值为 true, false. 另外如果你希望只在用户没有登录的是否才显示这个界面。 请使用如下代码</p>
+<blockquote>
+<div><div class="highlight-python"><pre>&lt;?php if($user_ID &gt; 0) { ezengage_login_ui('small', true); } ?&gt;</pre>
+</div>
+</div></blockquote>
 </div>
 </div>
 
@@ -141,31 +136,28 @@ PHP环境需要支持 <cite>fsockopen</cite> 函数。</p>
             </a></p>
   <h3><a href="../index.html">內容目录</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Discuz!X 系统集成</a><ul>
+<li><a class="reference internal" href="#">WordPress 系统集成</a><ul>
 <li><a class="reference internal" href="#ezengage">创建并配置ezEngage应用</a></li>
-<li><a class="reference internal" href="#ezengage-discuz-x">安装ezEngage Discuz!X 插件</a><ul>
+<li><a class="reference internal" href="#ezengage-wordpress">安装ezEngage WordPress 插件</a><ul>
 <li><a class="reference internal" href="#id2">系统要求</a></li>
-<li><a class="reference internal" href="#id3">下载</a></li>
-<li><a class="reference internal" href="#id4">安装</a></li>
+<li><a class="reference internal" href="#id3">后台安装</a></li>
+<li><a class="reference internal" href="#id4">手工安装</a></li>
 <li><a class="reference internal" href="#id5">配置</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#id6">使用方法</a><ul>
 <li><a class="reference internal" href="#id7">社会化登录</a></li>
 <li><a class="reference internal" href="#id8">多账户绑定和管理</a></li>
-<li><a class="reference internal" href="#id9">用户活动同步</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#id9">高级功能</a></li>
 </ul>
 </li>
 </ul>
 
   <h4>上一个主题</h4>
-  <p class="topless"><a href="../provider/douban.html"
-                        title="上一章">豆瓣配置指南</a></p>
-  <h4>下一个主题</h4>
   <p class="topless"><a href="phpwind.html"
-                        title="下一章">phpwind 系统集成</a></p>
+                        title="上一章">phpwind 系统集成</a></p>
 <div id="searchbox" style="display: none">
   <h3>快速搜索</h3>
     <form class="search" action="../search.html" method="get">
@@ -188,10 +180,7 @@ PHP环境需要支持 <cite>fsockopen</cite> 函数。</p>
       <ul>
         <li class="right" style="margin-right: 10px">
           <a href="phpwind.html" title="phpwind 系统集成"
-             >下一页</a></li>
-        <li class="right" >
-          <a href="../provider/douban.html" title="豆瓣配置指南"
-             >上一页</a> |</li>
+             >上一页</a></li>
     <li><a id="home-link" href="http://ezengage.com/">ezEngage 主页</a> &raquo;</li>
     
         <li><a href="../index.html">ezEngage 用户手册</a> &raquo;</li>

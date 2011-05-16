@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -7,8 +6,8 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>豆瓣配置指南 &mdash; ezengage-doc v0.1 documentation</title>
-    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <title>豆瓣配置指南 &mdash; ezEngage 用户手册</title>
+    <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,24 +21,30 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="ezengage-doc v0.1 documentation" href="../index.html" />
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="top" title="ezEngage 用户手册" href="../index.html" />
     <link rel="next" title="Discuz!X 系统集成" href="../plugin/discuzx.html" />
-    <link rel="prev" title="搜狐微博配置指南" href="sohuweibo.html" /> 
+    <link rel="prev" title="搜狐微博配置指南" href="sohuweibo.html" />
+ 
+
+<link rel="stylesheet" href="../_static/ezengage.css" type="text/css" />
+
   </head>
   <body>
     <div class="related">
-      <h3>Navigation</h3>
+      <h3>导航</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
           <a href="../plugin/discuzx.html" title="Discuz!X 系统集成"
-             accesskey="N">next</a> |</li>
+             accesskey="N">下一页</a></li>
         <li class="right" >
           <a href="sohuweibo.html" title="搜狐微博配置指南"
-             accesskey="P">previous</a> |</li>
-        <li><a href="../index.html">ezengage-doc v0.1 documentation</a> &raquo;</li> 
+             accesskey="P">上一页</a> |</li>
+    <li><a id="home-link" href="http://ezengage.com/">ezEngage 主页</a> &raquo;</li>
+    
+        <li><a href="../index.html">ezEngage 用户手册</a> &raquo;</li>
+ 
       </ul>
     </div>  
 
@@ -49,10 +54,10 @@
           <div class="body">
             
   <div class="section" id="id1">
-<h1>豆瓣配置指南<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1>豆瓣配置指南<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
 <p>为了让你的站点支持使用豆瓣账号登录，你需要创建一个豆瓣应用,　然后将应用的信息在填到ezEngage后台。</p>
 <div class="section" id="api-key">
-<h2>申请豆瓣API key<a class="headerlink" href="#api-key" title="Permalink to this headline">¶</a></h2>
+<h2>申请豆瓣API key<a class="headerlink" href="#api-key" title="永久链接至标题">¶</a></h2>
 <p>请通过浏览器访问 <a class="reference external" href="http://www.douban.com/service/apikey/apply">申请豆瓣API key</a></p>
 <img alt="https://img.skitch.com/20110516-fxxw49ypsbsd8yer256hdqq5cg.jpg" src="https://img.skitch.com/20110516-fxxw49ypsbsd8yer256hdqq5cg.jpg" />
 <ul class="simple">
@@ -63,14 +68,14 @@
 </ul>
 <p>点击申请。</p>
 <div class="section" id="id3">
-<h3>获得API Key<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<h3>获得API Key<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
 <p>请通过浏览器访问 <a class="reference external" href="http://www.douban.com/service/apikey/">豆瓣API key</a></p>
 <img alt="https://img.skitch.com/20110516-cs9bnfajgg3f2pwrh5yibiejq5.jpg" src="https://img.skitch.com/20110516-cs9bnfajgg3f2pwrh5yibiejq5.jpg" />
 <p>请将Key 和私钥记录下来, 你将需要在ezEngage管理后台配置时使用这个信息。</p>
 </div>
 </div>
 <div class="section" id="ezengage-app">
-<h2>配置ezEngage App 的豆瓣设置<a class="headerlink" href="#ezengage-app" title="Permalink to this headline">¶</a></h2>
+<h2>配置ezEngage App 的豆瓣设置<a class="headerlink" href="#ezengage-app" title="永久链接至标题">¶</a></h2>
 <p>在上面的步骤中，你已经创建了豆瓣API Key，并把 <cite>Key</cite>, <cite>私钥</cite> 记录下来了。</p>
 <p>请访问 <a class="reference external" href="http://ezengage.com/dashboard/">ezEngage管理后台</a> ，选择修改应用配置, 修改豆瓣配置，在弹出窗口中将上面两个值填入表单并保存。</p>
 <img alt="https://img.skitch.com/20110516-jihrirfmg2789ae6ieb94ibyy.jpg" src="https://img.skitch.com/20110516-jihrirfmg2789ae6ieb94ibyy.jpg" />
@@ -84,7 +89,10 @@
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="../index.html">Table Of Contents</a></h3>
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="../index.html">內容目录</a></h3>
   <ul>
 <li><a class="reference internal" href="#">豆瓣配置指南</a><ul>
 <li><a class="reference internal" href="#api-key">申请豆瓣API key</a><ul>
@@ -96,22 +104,22 @@
 </li>
 </ul>
 
-  <h4>Previous topic</h4>
+  <h4>上一个主题</h4>
   <p class="topless"><a href="sohuweibo.html"
-                        title="previous chapter">搜狐微博配置指南</a></p>
-  <h4>Next topic</h4>
+                        title="上一章">搜狐微博配置指南</a></p>
+  <h4>下一个主题</h4>
   <p class="topless"><a href="../plugin/discuzx.html"
-                        title="next chapter">Discuz!X 系统集成</a></p>
+                        title="下一章">Discuz!X 系统集成</a></p>
 <div id="searchbox" style="display: none">
-  <h3>Quick search</h3>
+  <h3>快速搜索</h3>
     <form class="search" action="../search.html" method="get">
       <input type="text" name="q" size="18" />
-      <input type="submit" value="Go" />
+      <input type="submit" value="搜索" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
     <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
+    输入相关的模块，术语，类或者函数名称进行搜索
     </p>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
@@ -120,23 +128,35 @@
       <div class="clearer"></div>
     </div>
     <div class="related">
-      <h3>Navigation</h3>
+      <h3>导航</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
           <a href="../plugin/discuzx.html" title="Discuz!X 系统集成"
-             >next</a> |</li>
+             >下一页</a></li>
         <li class="right" >
           <a href="sohuweibo.html" title="搜狐微博配置指南"
-             >previous</a> |</li>
-        <li><a href="../index.html">ezengage-doc v0.1 documentation</a> &raquo;</li> 
+             >上一页</a> |</li>
+    <li><a id="home-link" href="http://ezengage.com/">ezEngage 主页</a> &raquo;</li>
+    
+        <li><a href="../index.html">ezEngage 用户手册</a> &raquo;</li>
+ 
       </ul>
     </div>
+
     <div class="footer">
-        &copy; Copyright 2011, ftao.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+        &copy; 版权所有 2011, ezEngage Team.
     </div>
+<script type="text/javascript"> 
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20845547-3']);
+    _gaq.push(['_trackPageview']);
+ 
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script> 
+
   </body>
 </html>

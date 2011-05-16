@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -7,8 +6,8 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>phpwind 系统集成 &mdash; ezengage-doc v0.1 documentation</title>
-    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <title>phpwind 系统集成 &mdash; ezEngage 用户手册</title>
+    <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,20 +21,30 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="ezengage-doc v0.1 documentation" href="../index.html" />
-    <link rel="prev" title="Discuz!X 系统集成" href="discuzx.html" /> 
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="top" title="ezEngage 用户手册" href="../index.html" />
+    <link rel="next" title="WordPress 系统集成" href="wordpress.html" />
+    <link rel="prev" title="Discuz!X 系统集成" href="discuzx.html" />
+ 
+
+<link rel="stylesheet" href="../_static/ezengage.css" type="text/css" />
+
   </head>
   <body>
     <div class="related">
-      <h3>Navigation</h3>
+      <h3>导航</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="General Index"
-             accesskey="I">index</a></li>
+          <a href="wordpress.html" title="WordPress 系统集成"
+             accesskey="N">下一页</a></li>
         <li class="right" >
           <a href="discuzx.html" title="Discuz!X 系统集成"
-             accesskey="P">previous</a> |</li>
-        <li><a href="../index.html">ezengage-doc v0.1 documentation</a> &raquo;</li> 
+             accesskey="P">上一页</a> |</li>
+    <li><a id="home-link" href="http://ezengage.com/">ezEngage 主页</a> &raquo;</li>
+    
+        <li><a href="../index.html">ezEngage 用户手册</a> &raquo;</li>
+ 
       </ul>
     </div>  
 
@@ -45,26 +54,26 @@
           <div class="body">
             
   <div class="section" id="phpwind">
-<h1>phpwind 系统集成<a class="headerlink" href="#phpwind" title="Permalink to this headline">¶</a></h1>
+<h1>phpwind 系统集成<a class="headerlink" href="#phpwind" title="永久链接至标题">¶</a></h1>
 <div class="section" id="ezengage">
-<h2>创建并配置ezEngage应用<a class="headerlink" href="#ezengage" title="Permalink to this headline">¶</a></h2>
+<h2>创建并配置ezEngage应用<a class="headerlink" href="#ezengage" title="永久链接至标题">¶</a></h2>
 <p>如果你还没有注册 <a class="reference external" href="http://ezengage.com/signup/">ezEngage</a> , 请先注册并 <a class="reference internal" href="../how-to-use-ezengage.html#create-ezengage-app"><em>创建一个ezEngage 应用</em></a> 。</p>
 <p>在我们支持 <a class="reference internal" href="../provider/index.html#provider-list"><em>供应商列表</em></a> 中选择一个或多个，并做对应的配置。</p>
 </div>
 <div class="section" id="ezengage-phpwind">
-<h2>安装ezEngage phpwind 插件<a class="headerlink" href="#ezengage-phpwind" title="Permalink to this headline">¶</a></h2>
+<h2>安装ezEngage phpwind 插件<a class="headerlink" href="#ezengage-phpwind" title="永久链接至标题">¶</a></h2>
 <div class="section" id="id2">
-<h3>系统要求<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<h3>系统要求<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
 <p>插件目前只支持phpwind 8.5 系统。
 PHP环境需要支持 <cite>fsockopen</cite> 函数。</p>
 </div>
 <div class="section" id="id3">
-<h3>下载<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<h3>下载<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
 <p>插件的最新版本版本为0.1.4, 下载地址为</p>
 <p><a class="reference external" href="https://github.com/ezengage/pw-ezengage/downloads/ezengage-for-phpwind-0.1.4.zip">https://github.com/ezengage/pw-ezengage/downloads/ezengage-for-phpwind-0.1.4.zip</a></p>
 </div>
 <div class="section" id="id4">
-<h3>安装<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<h3>安装<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
 <ol class="arabic">
 <li><p class="first">从上面的地址下载最新版本的插件。</p>
 </li>
@@ -78,7 +87,7 @@ PHP环境需要支持 <cite>fsockopen</cite> 函数。</p>
 </ol>
 </div>
 <div class="section" id="id5">
-<h3>配置<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<h3>配置<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
 <ol class="arabic">
 <li><p class="first">找到你在ezEngage网站创建的应用的App Domain, APP Id 和 App Key。(<a class="reference internal" href="../how-to-use-ezengage.html#find-ezengage-app-info"><em>在哪里可以找到应用信息?</em></a>)</p>
 </li>
@@ -94,13 +103,13 @@ PHP环境需要支持 <cite>fsockopen</cite> 函数。</p>
 <p>到这里，插件已经安装好了。但是我们还需要修改几个PHPWind系统的文件，插件才能正常工作。</p>
 </div>
 <div class="section" id="id6">
-<h3>修改phpwind 系统文件<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<h3>修改phpwind 系统文件<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h3>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">注解</p>
 <p class="last">下面提到的文件路径都是相对于phpwind根目录。</p>
 </div>
 <div class="section" id="post-php">
-<h4>修改 <cite>post.php</cite><a class="headerlink" href="#post-php" title="Permalink to this headline">¶</a></h4>
+<h4>修改 <cite>post.php</cite><a class="headerlink" href="#post-php" title="永久链接至标题">¶</a></h4>
 <p>打开 <cite>post.php</cite> 在文件末尾找到下面的代码</p>
 <div class="highlight-python"><pre>if ($action == "new") {
    require_once(R_P.'require/postnew.php');
@@ -119,7 +128,7 @@ PHP环境需要支持 <cite>fsockopen</cite> 函数。</p>
 </div>
 </div>
 <div class="section" id="id7">
-<h4>修改模版文件<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<h4>修改模版文件<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h4>
 <p>打开 <cite>template/wind/footer.html</cite> , <cite>template/wind/showmsg.html</cite> 和 <cite>mode/area/template/footer.html</cite> 。
 在这三个模版文件的 <strong>最末尾</strong>, 加入下面的代码</p>
 <div class="highlight-python"><pre>&lt;script type="text/javascript" src="ezengage.php?mod=js&amp;scr=&lt;?php echo SCR;?&gt;"&gt;&lt;/script&gt;</pre>
@@ -128,9 +137,9 @@ PHP环境需要支持 <cite>fsockopen</cite> 函数。</p>
 </div>
 </div>
 <div class="section" id="id8">
-<h2>使用方法<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<h2>使用方法<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h2>
 <div class="section" id="id9">
-<h3>社会化登录<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<h3>社会化登录<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h3>
 <p>安装完成，在登录页,注册页和页面头部登录框左边会出现ezEngage 登录控件。
 用户可以直接使用他们的社交网络和微博账号登录到你的站点。</p>
 <img alt="http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/photo/support/phpwind-top-login.jpg" src="http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/photo/support/phpwind-top-login.jpg" />
@@ -138,13 +147,13 @@ PHP环境需要支持 <cite>fsockopen</cite> 函数。</p>
 <p>如果自动注册功能启用了，用户在从第三方登录完成后,系统会自动为他创建一个PHPWind的用户,然后登录,否则会要求用户完成站点的注册流程后绑定第三方账号。</p>
 </div>
 <div class="section" id="id10">
-<h3>多账户绑定和管理<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<h3>多账户绑定和管理<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h3>
 <p>插件支持一个phpwind用户绑定多个社交网络账号，比如说同时绑定新浪微博微博和腾讯微博账号到同一个phpwind账号。
 用户可以访问&#8221;我绑定的帐号&#8221;, 绑定多个帐号或者解除绑定。</p>
 <img alt="http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/photo/support/phpwind-my-accounts.jpg" src="http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/photo/support/phpwind-my-accounts.jpg" />
 </div>
 <div class="section" id="id11">
-<h3>用户活动同步<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<h3>用户活动同步<a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h3>
 <p>默认情况下，主题贴会被同步到绑定的帐号上。</p>
 <p>比如说用户A绑定了新浪微博账号B, 那么A在在论坛发了一条贴后，系统会使用新浪微博账号B也发布这个帖子，并带有到论坛该帖子的链接。</p>
 <p>用户可以在 <em>我绑定的帐号</em> 页面修改同步那些内容。</p>
@@ -158,7 +167,10 @@ PHP环境需要支持 <cite>fsockopen</cite> 函数。</p>
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="../index.html">Table Of Contents</a></h3>
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="../index.html">內容目录</a></h3>
   <ul>
 <li><a class="reference internal" href="#">phpwind 系统集成</a><ul>
 <li><a class="reference internal" href="#ezengage">创建并配置ezEngage应用</a></li>
@@ -184,19 +196,22 @@ PHP环境需要支持 <cite>fsockopen</cite> 函数。</p>
 </li>
 </ul>
 
-  <h4>Previous topic</h4>
+  <h4>上一个主题</h4>
   <p class="topless"><a href="discuzx.html"
-                        title="previous chapter">Discuz!X 系统集成</a></p>
+                        title="上一章">Discuz!X 系统集成</a></p>
+  <h4>下一个主题</h4>
+  <p class="topless"><a href="wordpress.html"
+                        title="下一章">WordPress 系统集成</a></p>
 <div id="searchbox" style="display: none">
-  <h3>Quick search</h3>
+  <h3>快速搜索</h3>
     <form class="search" action="../search.html" method="get">
       <input type="text" name="q" size="18" />
-      <input type="submit" value="Go" />
+      <input type="submit" value="搜索" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
     <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
+    输入相关的模块，术语，类或者函数名称进行搜索
     </p>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
@@ -205,20 +220,35 @@ PHP环境需要支持 <cite>fsockopen</cite> 函数。</p>
       <div class="clearer"></div>
     </div>
     <div class="related">
-      <h3>Navigation</h3>
+      <h3>导航</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="General Index"
-             >index</a></li>
+          <a href="wordpress.html" title="WordPress 系统集成"
+             >下一页</a></li>
         <li class="right" >
           <a href="discuzx.html" title="Discuz!X 系统集成"
-             >previous</a> |</li>
-        <li><a href="../index.html">ezengage-doc v0.1 documentation</a> &raquo;</li> 
+             >上一页</a> |</li>
+    <li><a id="home-link" href="http://ezengage.com/">ezEngage 主页</a> &raquo;</li>
+    
+        <li><a href="../index.html">ezEngage 用户手册</a> &raquo;</li>
+ 
       </ul>
     </div>
+
     <div class="footer">
-        &copy; Copyright 2011, ftao.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+        &copy; 版权所有 2011, ezEngage Team.
     </div>
+<script type="text/javascript"> 
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20845547-3']);
+    _gaq.push(['_trackPageview']);
+ 
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script> 
+
   </body>
 </html>

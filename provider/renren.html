@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -7,8 +6,8 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>人人网配置指南 &mdash; ezengage-doc v0.1 documentation</title>
-    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <title>人人网配置指南 &mdash; ezEngage 用户手册</title>
+    <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,24 +21,30 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="ezengage-doc v0.1 documentation" href="../index.html" />
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="top" title="ezEngage 用户手册" href="../index.html" />
     <link rel="next" title="QQ配置指南" href="qzone.html" />
-    <link rel="prev" title="腾讯微博配置指南" href="tencentweibo.html" /> 
+    <link rel="prev" title="腾讯微博配置指南" href="tencentweibo.html" />
+ 
+
+<link rel="stylesheet" href="../_static/ezengage.css" type="text/css" />
+
   </head>
   <body>
     <div class="related">
-      <h3>Navigation</h3>
+      <h3>导航</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
           <a href="qzone.html" title="QQ配置指南"
-             accesskey="N">next</a> |</li>
+             accesskey="N">下一页</a></li>
         <li class="right" >
           <a href="tencentweibo.html" title="腾讯微博配置指南"
-             accesskey="P">previous</a> |</li>
-        <li><a href="../index.html">ezengage-doc v0.1 documentation</a> &raquo;</li> 
+             accesskey="P">上一页</a> |</li>
+    <li><a id="home-link" href="http://ezengage.com/">ezEngage 主页</a> &raquo;</li>
+    
+        <li><a href="../index.html">ezEngage 用户手册</a> &raquo;</li>
+ 
       </ul>
     </div>  
 
@@ -49,28 +54,28 @@
           <div class="body">
             
   <div class="section" id="id1">
-<h1>人人网配置指南<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1>人人网配置指南<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
 <p>为了让你的站点支持使用人人网账号登录，你需要创建一个人人网应用,　然后将应用的信息在填到ezEngage后台。</p>
 <div class="section" id="id2">
-<h2>创建人人网应用<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h2>创建人人网应用<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
 <div class="section" id="id3">
-<h3>打开人人网开放平台<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<h3>打开人人网开放平台<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
 <p>请通过浏览器访问 <a class="reference external" href="http://dev.renren.com/">人人网开发平台</a> 。
 如果你还没有登录，请使用你的人人网账号登录。</p>
 </div>
 <div class="section" id="id5">
-<h3>创建应用<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<h3>创建应用<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
 <p>点击页面上的 <em>创建新应用</em> 按钮。</p>
 <img alt="https://img.skitch.com/20110516-8ae7di46pifwr3mp2nstnjwh39.jpg" src="https://img.skitch.com/20110516-8ae7di46pifwr3mp2nstnjwh39.jpg" />
 <p>填入应用名称, 应用名称可以使用你的站点的名称或域名, 阅读并同意协议，然后点击 <em>保存设置</em> 。</p>
 <img alt="https://img.skitch.com/20110516-jxdxcqf6b7k5mpcfuhkdcswp88.jpg" src="https://img.skitch.com/20110516-jxdxcqf6b7k5mpcfuhkdcswp88.jpg" />
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">注解</p>
 <p class="last">图中的 <cite>ezengage-demo</cite> 仅仅是一个示意，请不要使用这个名字。</p>
 </div>
 </div>
 <div class="section" id="api-key-secret-key">
-<h3>获得应用API Key,Secret Key<a class="headerlink" href="#api-key-secret-key" title="Permalink to this headline">¶</a></h3>
+<h3>获得应用API Key,Secret Key<a class="headerlink" href="#api-key-secret-key" title="永久链接至标题">¶</a></h3>
 <p>在创建完应用后，会进入 <em>应用基本信息设置</em> 页面。
 在这个页面你可以找到应用的 <cite>API Key</cite> 和 <cite>Secret Key</cite> 。</p>
 <img alt="https://img.skitch.com/20110516-q93j312afxahx6hkdkxr68pqm3.jpg" src="https://img.skitch.com/20110516-q93j312afxahx6hkdkxr68pqm3.jpg" />
@@ -79,9 +84,9 @@
 <p>请将 <cite>API Key</cite> 和 <cite>Secret Key</cite> 记录下来, 你将需要在ezEngage管理后台配置时使用这个信息。</p>
 </div>
 <div class="section" id="renren-set-website-info">
-<span id="id6"></span><h3>设置 <em>网站信息</em><a class="headerlink" href="#renren-set-website-info" title="Permalink to this headline">¶</a></h3>
+<span id="id6"></span><h3>设置 <em>网站信息</em><a class="headerlink" href="#renren-set-website-info" title="永久链接至标题">¶</a></h3>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">注解</p>
 <p class="last">这个步骤很重要，如果不设置，用户是无法使用人人网账号登录的。</p>
 </div>
 <p>请打开 <em>我的应用</em> ,　选择你之前创建的应用, 点击 <em>编辑应用属性</em> 。</p>
@@ -96,7 +101,7 @@
 <p>点击 <em>保存连接网站设置</em> 。</p>
 </div>
 <div class="section" id="feed">
-<h3>创建Feed模板(用于同步用户活动)<a class="headerlink" href="#feed" title="Permalink to this headline">¶</a></h3>
+<h3>创建Feed模板(用于同步用户活动)<a class="headerlink" href="#feed" title="永久链接至标题">¶</a></h3>
 <p>如果你需要支持同步用户在你的站点的活动到人人网，你需要创建一个Feed模板。</p>
 <p>创建流程请参考下面７张截图。</p>
 <img alt="http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/photo/renren-edit-feed-template-1.jpg" src="http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/photo/renren-edit-feed-template-1.jpg" />
@@ -110,21 +115,21 @@
 </div>
 </div>
 <div class="section" id="ezengage-app">
-<h2>配置ezEngage App 的人人网设置<a class="headerlink" href="#ezengage-app" title="Permalink to this headline">¶</a></h2>
+<h2>配置ezEngage App 的人人网设置<a class="headerlink" href="#ezengage-app" title="永久链接至标题">¶</a></h2>
 <p>在上面的步骤中，你已经创建了一个人人网应用和对应的Feed模板，并把 <cite>API Key</cite>, <cite>Secret Key</cite> 以及 <cite>Feed 模版组ID</cite> 记录下来了。</p>
 <p>请访问 <a class="reference external" href="http://ezengage.com/dashboard/">ezEngage管理后台</a> ，选择修改应用配置, 修改人人网配置，在弹出窗口中将上面三个值填入表单并保存。</p>
 <img alt="https://img.skitch.com/20110516-dpdpks5p9sgr77gr28u57wh4j4.jpg" src="https://img.skitch.com/20110516-dpdpks5p9sgr77gr28u57wh4j4.jpg" />
 <p>参考 <a class="reference internal" href="../how-to-use-ezengage.html#how-to-config-ezengage-app"><em>如何配置我的应用？</em></a></p>
 </div>
 <div class="section" id="id7">
-<h2>常见问题<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<h2>常见问题<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
 <div class="section" id="id8">
-<h3>登录时出现”通过人人网登录失败“<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<h3>登录时出现”通过人人网登录失败“<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h3>
 <p>如果提示 <cite>redirect_uri_mismatch</cite> , 请检查 <a class="reference internal" href="#renren-set-website-info"><em>设置 网站信息</em></a> 步骤的操作是否执行正确了。</p>
 <img alt="https://img.skitch.com/20110516-djkfa7ssc8c5sw97tkrcn38j6m.jpg" src="https://img.skitch.com/20110516-djkfa7ssc8c5sw97tkrcn38j6m.jpg" />
 </div>
 <div class="section" id="id9">
-<h3>消息没有同步到人人网<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<h3>消息没有同步到人人网<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h3>
 <p>人人网有session key 过期机制(一般是24小时), 如果你的网站上的用户A帮定了人人网账号，但是在24小时内没有通过人人网登录,
 而是通过你的站点的用户名和密码登录的，那么用户的session key　将过期，用户的活动将无法同步到人人网, 直到用户通过人人网账号登录你的站点。</p>
 </div>
@@ -137,7 +142,10 @@
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="../index.html">Table Of Contents</a></h3>
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="../index.html">內容目录</a></h3>
   <ul>
 <li><a class="reference internal" href="#">人人网配置指南</a><ul>
 <li><a class="reference internal" href="#id2">创建人人网应用</a><ul>
@@ -158,22 +166,22 @@
 </li>
 </ul>
 
-  <h4>Previous topic</h4>
+  <h4>上一个主题</h4>
   <p class="topless"><a href="tencentweibo.html"
-                        title="previous chapter">腾讯微博配置指南</a></p>
-  <h4>Next topic</h4>
+                        title="上一章">腾讯微博配置指南</a></p>
+  <h4>下一个主题</h4>
   <p class="topless"><a href="qzone.html"
-                        title="next chapter">QQ配置指南</a></p>
+                        title="下一章">QQ配置指南</a></p>
 <div id="searchbox" style="display: none">
-  <h3>Quick search</h3>
+  <h3>快速搜索</h3>
     <form class="search" action="../search.html" method="get">
       <input type="text" name="q" size="18" />
-      <input type="submit" value="Go" />
+      <input type="submit" value="搜索" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
     <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
+    输入相关的模块，术语，类或者函数名称进行搜索
     </p>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
@@ -182,23 +190,35 @@
       <div class="clearer"></div>
     </div>
     <div class="related">
-      <h3>Navigation</h3>
+      <h3>导航</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
           <a href="qzone.html" title="QQ配置指南"
-             >next</a> |</li>
+             >下一页</a></li>
         <li class="right" >
           <a href="tencentweibo.html" title="腾讯微博配置指南"
-             >previous</a> |</li>
-        <li><a href="../index.html">ezengage-doc v0.1 documentation</a> &raquo;</li> 
+             >上一页</a> |</li>
+    <li><a id="home-link" href="http://ezengage.com/">ezEngage 主页</a> &raquo;</li>
+    
+        <li><a href="../index.html">ezEngage 用户手册</a> &raquo;</li>
+ 
       </ul>
     </div>
+
     <div class="footer">
-        &copy; Copyright 2011, ftao.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+        &copy; 版权所有 2011, ezEngage Team.
     </div>
+<script type="text/javascript"> 
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20845547-3']);
+    _gaq.push(['_trackPageview']);
+ 
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script> 
+
   </body>
 </html>
