@@ -1,6 +1,12 @@
 .. how to config sinaweibo provider
 
-怎样创建新浪微博应用?
+*********************
+新浪微博配置指南
+*********************
+
+为了让你的站点支持使用新浪微博账号登录，你需要创建一个新浪微博应用,　然后将应用的信息在填到ezEngage后台。
+
+创建新浪微博应用
 =================================
 .. note::
    该文档部分内容参考了 `新浪微博开放平台新手指南 <http://open.t.sina.com.cn/wiki/index.php/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97>`_
@@ -51,3 +57,14 @@
 应用审核
 ----------------
 关于应用的审核请参考新浪的 `微博开放平台应用审核规范 <http://open.t.sina.com.cn/wiki/index.php/%E5%BE%AE%E5%8D%9A%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0%E5%BA%94%E7%94%A8%E5%AE%A1%E6%A0%B8%E8%A7%84%E8%8C%83/>`_ .
+
+配置ezEngage App 的新浪微博设置
+=================================
+在上面的步骤中，你已经创建了一个新浪微博应用，并把 `APP Key`, `APP Secret` 记录下来了。
+
+请访问 `ezEngage管理后台 <http://ezengage.com/dashboard/>`_ ，选择修改应用配置, 修改新浪微博配置，在弹出窗口中将上面两个值填入表单并保存。
+
+.. image:: https://img.skitch.com/20110516-b32ndg9tess2nki19arrmc1e8c.jpg
+
+参考 :ref:`how-to-config-ezengage-app` 
+

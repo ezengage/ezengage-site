@@ -1,4 +1,9 @@
 .. how to config tencentweibo provider
+*********************
+腾讯微博配置指南
+*********************
+
+为了让你的站点支持使用腾讯微博账号登录，你需要创建一个新浪微博应用,　然后将应用的信息在填到ezEngage后台。
 
 怎样创建腾讯微博应用?
 =================================
@@ -59,3 +64,14 @@
 应用审核
 ----------------
 关于应用的审核请参考腾讯的 `应用审核流程 <http://open.t.qq.com/resource.php?i=0,3>`_ .
+
+
+配置ezEngage App 的腾讯微博设置
+=================================
+在上面的步骤中，你已经创建了一个腾讯微博应用，并把 `APP Key`, `APP Secret` 记录下来了。
+
+请访问 `ezEngage管理后台 <http://ezengage.com/dashboard/>`_ ，选择修改应用配置, 修改腾讯微博配置，在弹出窗口中将上面两个值填入表单并保存。
+
+.. image:: https://img.skitch.com/20110516-gkxf22bgcqj8uy5n9p8fwqdh2k.jpg
+
+参考 :ref:`how-to-config-ezengage-app` 

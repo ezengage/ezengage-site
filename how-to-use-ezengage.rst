@@ -2,6 +2,8 @@
 ezEngage 网站使用手册
 =============================
 
+.. _create-ezengage-app:
+
 如何创建应用?
 ----------------------------
 访问ezengage.com 点击头部导航栏的"免费注册"链接。
@@ -29,13 +31,17 @@ ezEngage 网站使用手册
 .. image:: https://img.skitch.com/20110515-jj9wgrrqx6dgnw6q3e99gqn9dq.jpg
 
 
+.. _find-ezengage-app-info:
+
 在哪里可以找到应用信息?
 ----------------------------
 在ezEngage管理后台,应用概览页面，右侧边栏中可以找到应用信息栏目。
 
 .. image:: https://img.skitch.com/20110515-kstg3t5ipf8gwb745deijrkddn.jpg
   
-在哪里可以配置我的应用？
+.. _how-to-config-ezengage-app:
+
+如何配置我的应用？
 ----------------------------
 在ezEngage管理后台,应用概览页面，右侧边栏中可以找到"当前的配置"栏目,点击"修改配置"进入配置页面。
 

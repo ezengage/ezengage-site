@@ -3,23 +3,18 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to ezengage-doc's documentation!
+ezEngage 用户手册
 ========================================
 
-Contents:
+目录:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :glob:
    
    how-to-use-ezengage
    provider/sinaweibo
    provider/tencentweibo
+   provider/renren
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
