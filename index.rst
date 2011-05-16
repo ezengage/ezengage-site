@@ -21,6 +21,8 @@ ezEngage 用户手册
    provider/qzone
    provider/neteaseweibo
    provider/sohuweibo
+   provider/douban
 
    plugin/discuzx
+   plugin/phpwind
 
