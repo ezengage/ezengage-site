@@ -16,5 +16,6 @@ ezEngage 用户手册
    provider/sinaweibo
    provider/tencentweibo
    provider/renren
+   provider/qzone
 
 
