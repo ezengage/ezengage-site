@@ -1,5 +1,3 @@
-.. how to config tencentweibo provider
-
 *********************
 人人网配置指南
 *********************

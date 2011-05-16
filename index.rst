@@ -9,10 +9,12 @@ ezEngage 用户手册
 目录:
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :glob:
    
    how-to-use-ezengage
+
+   provider/index
    provider/sinaweibo
    provider/tencentweibo
    provider/renren
@@ -20,4 +22,5 @@ ezEngage 用户手册
    provider/neteaseweibo
    provider/sohuweibo
 
+   plugin/discuzx
 
