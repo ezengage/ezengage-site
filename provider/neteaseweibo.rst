@@ -1,4 +1,4 @@
-.. how to config sinaweibo provider
+.. how to config netease provider
 
 *********************
 网易微博配置指南
