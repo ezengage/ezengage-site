@@ -1,0 +1,183 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>腾讯微博配置指南 &mdash; ezengage-doc v0.1 documentation</title>
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="ezengage-doc v0.1 documentation" href="../index.html" />
+    <link rel="next" title="人人网配置指南" href="renren.html" />
+    <link rel="prev" title="新浪微博配置指南" href="sinaweibo.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="renren.html" title="人人网配置指南"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="sinaweibo.html" title="新浪微博配置指南"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">ezengage-doc v0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>腾讯微博配置指南<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>为了让你的站点支持使用腾讯微博账号登录，你需要创建一个新浪微博应用,　然后将应用的信息在填到ezEngage后台。</p>
+<div class="section" id="id2">
+<h2>创建腾讯微博应用<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">该文档部分内容参考了 <a class="reference external" href="http://open.t.qq.com/resource.php?i=0,2">腾讯微博应用开发指南</a></p>
+</div>
+<div class="section" id="id4">
+<h3>打开腾讯微博开放平台<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>请通过浏览器访问 <a class="reference external" href="http://open.t.qq.com/">腾讯微博开发平台</a></p>
+</div>
+<div class="section" id="id6">
+<h3>登录腾讯微博账号<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>请使用你的QQ账号登录。</p>
+<img alt="https://img.skitch.com/20110516-dfjeqgp6rjdatsqkxrmc8j6wa.jpg" src="https://img.skitch.com/20110516-dfjeqgp6rjdatsqkxrmc8j6wa.jpg" />
+</div>
+<div class="section" id="id7">
+<h3>申请开发者身份<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<img alt="http://open.t.qq.com/images/resource/p1.gif" src="http://open.t.qq.com/images/resource/p1.gif" />
+<p>点击页面上方导航“开发”，打开申请成为开发者表单。提交以下信息：</p>
+<ol class="arabic simple">
+<li>开发者类型 — 根据实际情况选择 个人/公司机构</li>
+<li>开发者姓名 或 公司名称/联系人姓名 — 请如实填写，便于我们与你联系</li>
+<li>联系用电子邮箱 — 等信息，完成邮箱验证后，你登录的QQ号或腾讯微博帐号，就可以获得开发者身份，创建应用</li>
+</ol>
+</div>
+<div class="section" id="id8">
+<h3>创建应用<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>在成为开发者后，点击页面上方导航 <em>开发</em> ，然后点击 <em>创建应用</em></p>
+<img alt="https://img.skitch.com/20110516-rcneuj23x5187dcpbg192abj5g.jpg" src="https://img.skitch.com/20110516-rcneuj23x5187dcpbg192abj5g.jpg" />
+<p>资料填写</p>
+<ul class="simple">
+<li>应用名称: 填入你的站点的名称</li>
+<li>应用网站: 填入你的站点的网址</li>
+<li>应用介绍: 填入你的站点的介绍</li>
+<li>应用图标: 上传你的网站Logo</li>
+<li>类型: 选网页应用就可以了</li>
+<li>应用官方微博: 填入你的网站的官方微博或者是你的微博就可以了</li>
+<li>常用IP留空</li>
+</ul>
+<img alt="https://img.skitch.com/20110516-p7f9k32qncg48wcefxg6ix35pn.jpg" src="https://img.skitch.com/20110516-p7f9k32qncg48wcefxg6ix35pn.jpg" />
+<p>相关内容填写完毕后，请点击 <em>提交</em> 按钮进行保存信息。</p>
+</div>
+<div class="section" id="app-key-app-secret">
+<h3>获得App Key 和 App Secret<a class="headerlink" href="#app-key-app-secret" title="Permalink to this headline">¶</a></h3>
+<p>应用创建完成后，将会进入应用信息页面。该应用也会在 <em>开发</em> 菜单的首页列出，点击 <em>查看详情</em> 也可以进入应用信息页.
+在这个页面你可以看到应用的App Key 和App Secret .</p>
+<img alt="https://img.skitch.com/20110516-n9b1x3t478qbtrer2mhkw74wui.jpg" src="https://img.skitch.com/20110516-n9b1x3t478qbtrer2mhkw74wui.jpg" />
+<p>请将App Key 和App Secret 记录下来, 你将需要在ezEngage管理后台配置时使用这个信息。</p>
+</div>
+<div class="section" id="id9">
+<h3>应用审核<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>关于应用的审核请参考腾讯的 <a class="reference external" href="http://open.t.qq.com/resource.php?i=0,3">应用审核流程</a> .</p>
+</div>
+</div>
+<div class="section" id="ezengage-app">
+<h2>配置ezEngage App 的腾讯微博设置<a class="headerlink" href="#ezengage-app" title="Permalink to this headline">¶</a></h2>
+<p>在上面的步骤中，你已经创建了一个腾讯微博应用，并把 <cite>APP Key</cite>, <cite>APP Secret</cite> 记录下来了。</p>
+<p>请访问 <a class="reference external" href="http://ezengage.com/dashboard/">ezEngage管理后台</a> ，选择修改应用配置, 修改腾讯微博配置，在弹出窗口中将上面两个值填入表单并保存。</p>
+<img alt="https://img.skitch.com/20110516-gkxf22bgcqj8uy5n9p8fwqdh2k.jpg" src="https://img.skitch.com/20110516-gkxf22bgcqj8uy5n9p8fwqdh2k.jpg" />
+<p>参考 <a class="reference internal" href="../how-to-use-ezengage.html#how-to-config-ezengage-app"><em>如何配置我的应用？</em></a></p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">腾讯微博配置指南</a><ul>
+<li><a class="reference internal" href="#id2">创建腾讯微博应用</a><ul>
+<li><a class="reference internal" href="#id4">打开腾讯微博开放平台</a></li>
+<li><a class="reference internal" href="#id6">登录腾讯微博账号</a></li>
+<li><a class="reference internal" href="#id7">申请开发者身份</a></li>
+<li><a class="reference internal" href="#id8">创建应用</a></li>
+<li><a class="reference internal" href="#app-key-app-secret">获得App Key 和 App Secret</a></li>
+<li><a class="reference internal" href="#id9">应用审核</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ezengage-app">配置ezEngage App 的腾讯微博设置</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="sinaweibo.html"
+                        title="previous chapter">新浪微博配置指南</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="renren.html"
+                        title="next chapter">人人网配置指南</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="renren.html" title="人人网配置指南"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="sinaweibo.html" title="新浪微博配置指南"
+             >previous</a> |</li>
+        <li><a href="../index.html">ezengage-doc v0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, ftao.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

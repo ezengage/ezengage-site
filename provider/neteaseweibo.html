@@ -1,0 +1,160 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>网易微博配置指南 &mdash; ezengage-doc v0.1 documentation</title>
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="ezengage-doc v0.1 documentation" href="../index.html" />
+    <link rel="next" title="搜狐微博配置指南" href="sohuweibo.html" />
+    <link rel="prev" title="QQ配置指南" href="qzone.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="sohuweibo.html" title="搜狐微博配置指南"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="qzone.html" title="QQ配置指南"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">ezengage-doc v0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>网易微博配置指南<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>为了让你的站点支持使用网易微博账号登录，你需要创建一个网易微博应用,　然后将应用的信息在填到ezEngage后台。</p>
+<div class="section" id="id2">
+<h2>创建网易微博应用<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id3">
+<h3>打开网易微博开放平台<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>请通过浏览器访问 <a class="reference external" href="http://open.t.163.com/">网易微博开放平台</a></p>
+</div>
+<div class="section" id="id5">
+<h3>进入我的应用<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>请点击我的应用, 如果你还没有登录, 请使用你的网易微博账号登录。</p>
+<img alt="https://img.skitch.com/20110516-18g7aibcyyk314ehpqque82twk.jpg" src="https://img.skitch.com/20110516-18g7aibcyyk314ehpqque82twk.jpg" />
+</div>
+<div class="section" id="id6">
+<h3>创建应用<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>在我的应用页面点击 <em>创建新应用</em>,出现新应用表单。</p>
+<img alt="https://img.skitch.com/20110516-rfqqpj7j65j2a9m6xcfmfn5e3q.jpg" src="https://img.skitch.com/20110516-rfqqpj7j65j2a9m6xcfmfn5e3q.jpg" />
+<p>资料填写</p>
+<ul class="simple">
+<li>应用名称: 填入你的网站名称</li>
+<li>应用网站: 填入你的网站地址</li>
+<li>图标,描述,开发者名称按实填写就可以了</li>
+<li>应用分类随便选择一个（比如其他客户端)</li>
+</ul>
+<p>相关内容填写完毕后，请点击 <em>提交</em> 按钮进行保存信息。</p>
+</div>
+<div class="section" id="consumer-key-consumer-secret">
+<h3>获得Consumer Key 和 Consumer Secret<a class="headerlink" href="#consumer-key-consumer-secret" title="Permalink to this headline">¶</a></h3>
+<p>应用创建完成后，会在 <em>应用列表</em> 列出，点击应用的图标, 进入应用详细信息页面。
+在这个页面你可以看到应用的Consumer Key 和Consumer Secret 。</p>
+<img alt="https://img.skitch.com/20110516-d7huuib9tic1hgk683de33fw3b.jpg" src="https://img.skitch.com/20110516-d7huuib9tic1hgk683de33fw3b.jpg" />
+<img alt="https://img.skitch.com/20110516-n13wwmr65j1h6wkyqfrp2f1t74.jpg" src="https://img.skitch.com/20110516-n13wwmr65j1h6wkyqfrp2f1t74.jpg" />
+<p>请将Consumer Key 和Consumer Secret 记录下来, 你将需要在ezEngage管理后台配置时使用这个信息。</p>
+</div>
+</div>
+<div class="section" id="ezengage-app">
+<h2>配置ezEngage App 的网易微博设置<a class="headerlink" href="#ezengage-app" title="Permalink to this headline">¶</a></h2>
+<p>在上面的步骤中，你已经创建了一个网易微博应用，并把 <cite>Consumer Key</cite>, <cite>Consumer Secret</cite> 记录下来了。</p>
+<p>请访问 <a class="reference external" href="http://ezengage.com/dashboard/">ezEngage管理后台</a> ，选择修改应用配置, 修改网易微博配置，在弹出窗口中将上面两个值填入表单并保存。</p>
+<img alt="https://img.skitch.com/20110516-xfftarxw1b9tu6ka9bcrree2qd.jpg" src="https://img.skitch.com/20110516-xfftarxw1b9tu6ka9bcrree2qd.jpg" />
+<p>参考 <a class="reference internal" href="../how-to-use-ezengage.html#how-to-config-ezengage-app"><em>如何配置我的应用？</em></a></p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">网易微博配置指南</a><ul>
+<li><a class="reference internal" href="#id2">创建网易微博应用</a><ul>
+<li><a class="reference internal" href="#id3">打开网易微博开放平台</a></li>
+<li><a class="reference internal" href="#id5">进入我的应用</a></li>
+<li><a class="reference internal" href="#id6">创建应用</a></li>
+<li><a class="reference internal" href="#consumer-key-consumer-secret">获得Consumer Key 和 Consumer Secret</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ezengage-app">配置ezEngage App 的网易微博设置</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="qzone.html"
+                        title="previous chapter">QQ配置指南</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="sohuweibo.html"
+                        title="next chapter">搜狐微博配置指南</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="sohuweibo.html" title="搜狐微博配置指南"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="qzone.html" title="QQ配置指南"
+             >previous</a> |</li>
+        <li><a href="../index.html">ezengage-doc v0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, ftao.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

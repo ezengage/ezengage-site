@@ -1,0 +1,167 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>搜狐微博配置指南 &mdash; ezengage-doc v0.1 documentation</title>
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="ezengage-doc v0.1 documentation" href="../index.html" />
+    <link rel="prev" title="网易微博配置指南" href="neteaseweibo.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="neteaseweibo.html" title="网易微博配置指南"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">ezengage-doc v0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>搜狐微博配置指南<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>为了让你的站点支持使用搜狐微博账号登录，你需要创建一个搜狐微博应用,　然后将应用的信息在填到ezEngage后台。</p>
+<div class="section" id="id2">
+<h2>创建搜狐微博应用<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id3">
+<h3>打开搜狐微博开放平台<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>请通过浏览器访问 <a class="reference external" href="http://open.t.sohu.com/">搜狐微博开放平台</a></p>
+</div>
+<div class="section" id="id5">
+<h3>登录搜狐微博账号<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>如果你还没有登录, 请使用你的搜狐微博账号登录。</div></blockquote>
+<img alt="https://img.skitch.com/20110516-bim1myk9a5q8r8c9818h3ixcbp.jpg" src="https://img.skitch.com/20110516-bim1myk9a5q8r8c9818h3ixcbp.jpg" />
+</div>
+<div class="section" id="id6">
+<h3>创建应用<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>在首页点击 <em>创建我的应用</em> 或者在我的应用页面点击 <em>创建应用</em>, 出现新应用表单。</p>
+<img alt="https://img.skitch.com/20110516-m2r7xabqjc37pq4t3fdrjfb8k8.jpg" src="https://img.skitch.com/20110516-m2r7xabqjc37pq4t3fdrjfb8k8.jpg" />
+<p>资料填写</p>
+<ul>
+<li><p class="first">应用名称: 填入你的网站名称</p>
+</li>
+<li><p class="first">应用地址: 填入你的网站地址</p>
+</li>
+<li><p class="first">图标,公司或组织名称,应用描述,按实填写就可以了</p>
+</li>
+<li><p class="first">应用分类随便选择一个（比如合作网站)</p>
+</li>
+<li><p class="first">应用类型选择浏览器</p>
+</li>
+<li><p class="first">Callback URL</p>
+<blockquote>
+<div><ul class="simple">
+<li>如果你还没有创建ezEngage 应用，请 <a class="reference internal" href="../how-to-use-ezengage.html#create-ezengage-app"><em>创建一个ezEngage 应用</em></a> , 并记录下来的你 <cite>App Domain</cite> 。</li>
+<li>如果你已经创建了ezEngage 应用，请 <a class="reference internal" href="../how-to-use-ezengage.html#find-ezengage-app-info"><em>找到应用信息</em></a>, 并记录下 <cite>App Domain</cite> 。</li>
+</ul>
+<p>假设你的 <cite>App Domain</cite> 是 <cite>exampleappdomain</cite>, 就将 <cite>http://exampleappdomain.ezengage.net</cite> 填入Callback URL项目内。</p>
+</div></blockquote>
+</li>
+</ul>
+<p>相关内容填写完毕后，请点击 <em>创建应用</em> 按钮进行保存信息。</p>
+</div>
+<div class="section" id="consumer-key-consumer-secret">
+<h3>获得Consumer Key 和 Consumer Secret<a class="headerlink" href="#consumer-key-consumer-secret" title="Permalink to this headline">¶</a></h3>
+<p>应用创建完成后，会在 <em>我的应用页面</em> 列出，点击应用的图标, 进入应用状态页面，点击右侧的应用详细信息。
+在这个页面你可以看到应用的Consumer Key 和Consumer Secret 。</p>
+<img alt="https://img.skitch.com/20110516-bcxddtbw2xmpyhn8pcs6197eef.jpg" src="https://img.skitch.com/20110516-bcxddtbw2xmpyhn8pcs6197eef.jpg" />
+<img alt="https://img.skitch.com/20110516-gpjjqrcicjwdn73rhdbskdhtm8.jpg" src="https://img.skitch.com/20110516-gpjjqrcicjwdn73rhdbskdhtm8.jpg" />
+<img alt="https://img.skitch.com/20110516-d5yq785pdxsij5kjyg69ixk99y.jpg" src="https://img.skitch.com/20110516-d5yq785pdxsij5kjyg69ixk99y.jpg" />
+<p>请将Consumer Key 和Consumer Secret 记录下来, 你将需要在ezEngage管理后台配置时使用这个信息。</p>
+</div>
+</div>
+<div class="section" id="ezengage-app">
+<h2>配置ezEngage App 的搜狐微博设置<a class="headerlink" href="#ezengage-app" title="Permalink to this headline">¶</a></h2>
+<p>在上面的步骤中，你已经创建了一个搜狐微博应用，并把 <cite>Consumer Key</cite>, <cite>Consumer Secret</cite> 记录下来了。</p>
+<p>请访问 <a class="reference external" href="http://ezengage.com/dashboard/">ezEngage管理后台</a> ，选择修改应用配置, 修改搜狐微博配置，在弹出窗口中将上面两个值填入表单并保存。</p>
+<img alt="https://img.skitch.com/20110516-rbhmf5irb7fg83mgpxwb37u3yt.jpg" src="https://img.skitch.com/20110516-rbhmf5irb7fg83mgpxwb37u3yt.jpg" />
+<p>参考 <a class="reference internal" href="../how-to-use-ezengage.html#how-to-config-ezengage-app"><em>如何配置我的应用？</em></a></p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">搜狐微博配置指南</a><ul>
+<li><a class="reference internal" href="#id2">创建搜狐微博应用</a><ul>
+<li><a class="reference internal" href="#id3">打开搜狐微博开放平台</a></li>
+<li><a class="reference internal" href="#id5">登录搜狐微博账号</a></li>
+<li><a class="reference internal" href="#id6">创建应用</a></li>
+<li><a class="reference internal" href="#consumer-key-consumer-secret">获得Consumer Key 和 Consumer Secret</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ezengage-app">配置ezEngage App 的搜狐微博设置</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="neteaseweibo.html"
+                        title="previous chapter">网易微博配置指南</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="neteaseweibo.html" title="网易微博配置指南"
+             >previous</a> |</li>
+        <li><a href="../index.html">ezengage-doc v0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, ftao.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>
