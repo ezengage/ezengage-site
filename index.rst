@@ -13,6 +13,8 @@ Contents:
    :glob:
    
    how-to-use-ezengage
+   provider/sinaweibo
+   provider/tencentweibo
 
 Indices and tables
 ==================
