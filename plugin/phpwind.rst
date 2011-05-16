@@ -90,9 +90,9 @@ https://github.com/ezengage/pw-ezengage/downloads/ezengage-for-phpwind-0.1.4.zip
 安装完成，在登录页,注册页和页面头部登录框左边会出现ezEngage 登录控件。
 用户可以直接使用他们的社交网络和微博账号登录到你的站点。
 
-.. image :: http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/photo/support/phpwind-top-login.jpg
+.. image:: http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/photo/support/phpwind-top-login.jpg
 
-.. image :: http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/photo/support/phpwind-login-widget.jpg
+.. image:: http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/photo/support/phpwind-login-widget.jpg
 
 
 如果自动注册功能启用了，用户在从第三方登录完成后,系统会自动为他创建一个PHPWind的用户,然后登录,否则会要求用户完成站点的注册流程后绑定第三方账号。
@@ -103,7 +103,7 @@ https://github.com/ezengage/pw-ezengage/downloads/ezengage-for-phpwind-0.1.4.zip
 插件支持一个phpwind用户绑定多个社交网络账号，比如说同时绑定新浪微博微博和腾讯微博账号到同一个phpwind账号。
 用户可以访问"我绑定的帐号", 绑定多个帐号或者解除绑定。
 
-.. image :: http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/photo/support/phpwind-my-accounts.jpg
+.. image:: http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/photo/support/phpwind-my-accounts.jpg
 
 
 用户活动同步

@@ -52,9 +52,9 @@ https://github.com/ezengage/discuz-ezengage/downloads/ezengage-for-discuzx-0.2.3
 安装完成，在登录页,注册页和页面头部登录框左边会出现ezEngage 登录控件。
 用户可以直接它们的社交网络和微博账号登录到你的站点。
 
-  ..image:: http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/img/discuzx-plugin-top.png
-  ..image:: http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/img/discuzx-plugin-login.png
-  ..image:: http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/img/discuzx-plugin-register.png
+  .. image:: http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/img/discuzx-plugin-top.png
+  .. image:: http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/img/discuzx-plugin-login.png
+  .. image:: http://s3-us-west-1.amazonaws.com/media.ezengage.com/yumpweb/20110515143119-g/img/discuzx-plugin-register.png
 
 多账户绑定和管理
 -------------------
@@ -71,5 +71,4 @@ https://github.com/ezengage/discuz-ezengage/downloads/ezengage-for-discuzx-0.2.3
 比如说用户A绑定了新浪微博账号B, 那么A在在论坛发了一条贴后，系统会使用新浪微博账号B也发布这个帖子，并带有到论坛该帖子的链接。
 
 用户可以在 *我绑定的帐号* 页面修改同步哪些内容。
-
 

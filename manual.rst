@@ -1,5 +1,5 @@
 .. how to use ezengage site 
-ezEngage 网站使用手册
+ezEngage 网站使用
 =============================
 
 .. _create-ezengage-app:
