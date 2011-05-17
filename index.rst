@@ -8,13 +8,14 @@ ezEngage 用户手册
 
 这份文档是提供给希望使用或已经在使用 ezEngage 服务的网站的站长或管理员使用的。
 
-通用
+新手指南
 ----------------
 
 .. toctree::
    :maxdepth: 2
    :glob:
    
+   tutorial
    manual
    faq
 
