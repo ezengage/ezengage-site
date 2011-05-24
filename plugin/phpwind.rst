@@ -25,8 +25,8 @@ https://github.com/ezengage/pw-ezengage/downloads/ezengage-for-phpwind-0.1.4.zip
 ----------
 1. 从上面的地址下载最新版本的插件。
 2. 解压下载的文件，将upload目录下的内容上传你的phpwind安装目录。
-   .. note::
-     注意upload 目录下面的 `hack` 目录和 `ezengage.php` 文件 **都** 需要上传。
+
+   .. note:: 注意upload 目录下面的 **hack** 目录和 **ezengage.php** 文件 **都** 需要上传。
 
 3. 访问PHPWind后台, 打开"应用" -> "插件中心" ，安装ezEngage。
 
