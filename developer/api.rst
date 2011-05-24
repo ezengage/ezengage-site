@@ -1,5 +1,13 @@
 RESTful API
 =================
+ezEngage 提供RESTful API 来读取用户认证信息和推送消息到社交网络。
+
+使用RESTful API 需要你能够发送HTTP GET/POST 请求，并能解析JSON格式的响应数据。
+
+在发送请求时需要用到的你的ezEngage APP Key。(参考: :ref:`find-ezengage-app-info`)
+
+
+.. _api-get-profile:
 
 Get Profile
 ---------------
