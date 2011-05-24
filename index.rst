@@ -44,3 +44,12 @@ ezEngage 用户手册
    plugin/phpwind
    plugin/wordpress
 
+开发者文档
+----------------
+.. toctree::
+   :maxdepth: 2
+   :glob:
+ 
+   developer/widget
+   developer/integration
+
