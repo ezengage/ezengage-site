@@ -52,5 +52,5 @@ ezEngage 用户手册
  
    developer/widget
    developer/token_url
-   developer/integration
+   developer/api
 
