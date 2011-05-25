@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>供应商(Provider) &mdash; ezEngage 用户手册</title>
+    <title>ezEngage API &mdash; ezEngage 用户手册</title>
     <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript">
@@ -24,8 +24,8 @@
     <script type="text/javascript" src="../_static/translations.js"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="top" title="ezEngage 用户手册" href="../index.html" />
-    <link rel="next" title="新浪微博配置指南" href="sinaweibo.html" />
-    <link rel="prev" title="常见问题" href="../faq.html" />
+    <link rel="next" title="如何将 ezEngage 集成到网站中?" href="integration.html" />
+    <link rel="prev" title="WordPress 系统集成" href="../plugin/wordpress.html" />
  
 
 <link rel="stylesheet" href="../_static/ezengage.css" type="text/css" />
@@ -36,10 +36,10 @@
       <h3>导航</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="sinaweibo.html" title="新浪微博配置指南"
+          <a href="integration.html" title="如何将 ezEngage 集成到网站中?"
              accesskey="N">下一页</a></li>
         <li class="right" >
-          <a href="../faq.html" title="常见问题"
+          <a href="../plugin/wordpress.html" title="WordPress 系统集成"
              accesskey="P">上一页</a> |</li>
     <li><a id="home-link" href="http://ezengage.com/">ezEngage 主页</a> &nbsp;|&nbsp; </li>
     
@@ -53,82 +53,8 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="provider">
-<h1>供应商(Provider)<a class="headerlink" href="#provider" title="永久链接至标题">¶</a></h1>
-<p>国内各个社交网络(SNS)网站和微博网站都提供了开放API，在某种意义上都是用户身份提供者。
-通过用户的授权后，可以通过API获得这些网站的用户的信息。</p>
-<p>我们称这些网站为身份供应商(Identity Provider), 简称 <strong>供应商</strong> (Provider)。</p>
-<div class="section" id="ezengage">
-<span id="provider-list"></span><h2>ezEngage 支持的供应商<a class="headerlink" href="#ezengage" title="永久链接至标题">¶</a></h2>
-<table border="1" class="docutils">
-<colgroup>
-<col width="16%" />
-<col width="8%" />
-<col width="20%" />
-<col width="25%" />
-<col width="31%" />
-</colgroup>
-<thead valign="bottom">
-<tr><th class="head">供应商</th>
-<th class="head">类型</th>
-<th class="head">支持登录</th>
-<th class="head">支持内容推送</th>
-<th class="head">配置文档</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr><td>人人网</td>
-<td>SNS</td>
-<td>是</td>
-<td>是</td>
-<td><a class="reference internal" href="renren.html"><em>人人网配置指南</em></a></td>
-</tr>
-<tr><td>豆瓣网</td>
-<td>SNS</td>
-<td>是</td>
-<td>是</td>
-<td><a class="reference internal" href="douban.html"><em>豆瓣配置指南</em></a></td>
-</tr>
-<tr><td>QQ空间</td>
-<td>SNS</td>
-<td>是</td>
-<td>否 <a class="footnote-reference" href="#f1" id="id1">[1]</a></td>
-<td><a class="reference internal" href="qzone.html"><em>QQ配置指南</em></a></td>
-</tr>
-<tr><td>新浪微博</td>
-<td>微博</td>
-<td>是</td>
-<td>是</td>
-<td><a class="reference internal" href="sinaweibo.html"><em>新浪微博配置指南</em></a></td>
-</tr>
-<tr><td>腾讯微博</td>
-<td>微博</td>
-<td>是</td>
-<td>是</td>
-<td><a class="reference internal" href="tencentweibo.html"><em>腾讯微博配置指南</em></a></td>
-</tr>
-<tr><td>网易微博</td>
-<td>微博</td>
-<td>是</td>
-<td>是</td>
-<td><a class="reference internal" href="neteaseweibo.html"><em>网易微博配置指南</em></a></td>
-</tr>
-<tr><td>搜狐微博</td>
-<td>微博</td>
-<td>是</td>
-<td>是</td>
-<td><a class="reference internal" href="sohuweibo.html"><em>搜狐微博配置指南</em></a></td>
-</tr>
-</tbody>
-</table>
-<p class="rubric">Footnotes</p>
-<table class="docutils footnote" frame="void" id="f1" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>QQ空间目前没有开通API来推送内容到QQ空间。</td></tr>
-</tbody>
-</table>
-</div>
+  <div class="section" id="ezengage-api">
+<h1>ezEngage API<a class="headerlink" href="#ezengage-api" title="永久链接至标题">¶</a></h1>
 </div>
 
 
@@ -140,20 +66,12 @@
             <p class="logo"><a href="../index.html">
               <img class="logo" src="../_static/logo.png" alt="Logo"/>
             </a></p>
-  <h3><a href="../index.html">內容目录</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">供应商(Provider)</a><ul>
-<li><a class="reference internal" href="#ezengage">ezEngage 支持的供应商</a></li>
-</ul>
-</li>
-</ul>
-
   <h4>上一个主题</h4>
-  <p class="topless"><a href="../faq.html"
-                        title="上一章">常见问题</a></p>
+  <p class="topless"><a href="../plugin/wordpress.html"
+                        title="上一章">WordPress 系统集成</a></p>
   <h4>下一个主题</h4>
-  <p class="topless"><a href="sinaweibo.html"
-                        title="下一章">新浪微博配置指南</a></p>
+  <p class="topless"><a href="integration.html"
+                        title="下一章">如何将 ezEngage 集成到网站中?</a></p>
 <div id="searchbox" style="display: none">
   <h3>快速搜索</h3>
     <form class="search" action="../search.html" method="get">
@@ -175,10 +93,10 @@
       <h3>导航</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="sinaweibo.html" title="新浪微博配置指南"
+          <a href="integration.html" title="如何将 ezEngage 集成到网站中?"
              >下一页</a></li>
         <li class="right" >
-          <a href="../faq.html" title="常见问题"
+          <a href="../plugin/wordpress.html" title="WordPress 系统集成"
              >上一页</a> |</li>
     <li><a id="home-link" href="http://ezengage.com/">ezEngage 主页</a> &nbsp;|&nbsp; </li>
     

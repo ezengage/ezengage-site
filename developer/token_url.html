@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>供应商(Provider) &mdash; ezEngage 用户手册</title>
+    <title>服务器端集成 &mdash; ezEngage 用户手册</title>
     <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript">
@@ -24,8 +24,8 @@
     <script type="text/javascript" src="../_static/translations.js"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="top" title="ezEngage 用户手册" href="../index.html" />
-    <link rel="next" title="新浪微博配置指南" href="sinaweibo.html" />
-    <link rel="prev" title="常见问题" href="../faq.html" />
+    <link rel="next" title="RESTful API" href="api.html" />
+    <link rel="prev" title="登录Widget" href="widget.html" />
  
 
 <link rel="stylesheet" href="../_static/ezengage.css" type="text/css" />
@@ -36,10 +36,10 @@
       <h3>导航</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="sinaweibo.html" title="新浪微博配置指南"
+          <a href="api.html" title="RESTful API"
              accesskey="N">下一页</a></li>
         <li class="right" >
-          <a href="../faq.html" title="常见问题"
+          <a href="widget.html" title="登录Widget"
              accesskey="P">上一页</a> |</li>
     <li><a id="home-link" href="http://ezengage.com/">ezEngage 主页</a> &nbsp;|&nbsp; </li>
     
@@ -53,81 +53,28 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="provider">
-<h1>供应商(Provider)<a class="headerlink" href="#provider" title="永久链接至标题">¶</a></h1>
-<p>国内各个社交网络(SNS)网站和微博网站都提供了开放API，在某种意义上都是用户身份提供者。
-通过用户的授权后，可以通过API获得这些网站的用户的信息。</p>
-<p>我们称这些网站为身份供应商(Identity Provider), 简称 <strong>供应商</strong> (Provider)。</p>
-<div class="section" id="ezengage">
-<span id="provider-list"></span><h2>ezEngage 支持的供应商<a class="headerlink" href="#ezengage" title="永久链接至标题">¶</a></h2>
-<table border="1" class="docutils">
-<colgroup>
-<col width="16%" />
-<col width="8%" />
-<col width="20%" />
-<col width="25%" />
-<col width="31%" />
-</colgroup>
-<thead valign="bottom">
-<tr><th class="head">供应商</th>
-<th class="head">类型</th>
-<th class="head">支持登录</th>
-<th class="head">支持内容推送</th>
-<th class="head">配置文档</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr><td>人人网</td>
-<td>SNS</td>
-<td>是</td>
-<td>是</td>
-<td><a class="reference internal" href="renren.html"><em>人人网配置指南</em></a></td>
-</tr>
-<tr><td>豆瓣网</td>
-<td>SNS</td>
-<td>是</td>
-<td>是</td>
-<td><a class="reference internal" href="douban.html"><em>豆瓣配置指南</em></a></td>
-</tr>
-<tr><td>QQ空间</td>
-<td>SNS</td>
-<td>是</td>
-<td>否 <a class="footnote-reference" href="#f1" id="id1">[1]</a></td>
-<td><a class="reference internal" href="qzone.html"><em>QQ配置指南</em></a></td>
-</tr>
-<tr><td>新浪微博</td>
-<td>微博</td>
-<td>是</td>
-<td>是</td>
-<td><a class="reference internal" href="sinaweibo.html"><em>新浪微博配置指南</em></a></td>
-</tr>
-<tr><td>腾讯微博</td>
-<td>微博</td>
-<td>是</td>
-<td>是</td>
-<td><a class="reference internal" href="tencentweibo.html"><em>腾讯微博配置指南</em></a></td>
-</tr>
-<tr><td>网易微博</td>
-<td>微博</td>
-<td>是</td>
-<td>是</td>
-<td><a class="reference internal" href="neteaseweibo.html"><em>网易微博配置指南</em></a></td>
-</tr>
-<tr><td>搜狐微博</td>
-<td>微博</td>
-<td>是</td>
-<td>是</td>
-<td><a class="reference internal" href="sohuweibo.html"><em>搜狐微博配置指南</em></a></td>
-</tr>
-</tbody>
-</table>
-<p class="rubric">Footnotes</p>
-<table class="docutils footnote" frame="void" id="f1" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>QQ空间目前没有开通API来推送内容到QQ空间。</td></tr>
-</tbody>
-</table>
+  <div class="section" id="id1">
+<h1>服务器端集成<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<div class="section" id="token-url">
+<span id="id2"></span><h2>token_url<a class="headerlink" href="#token-url" title="永久链接至标题">¶</a></h2>
+<p><cite>token_url</cite> 是你的网站是的的一个处理程序。取决你使用的编程语言，它可能是一个PHP页面，CGI脚本或者JSP脚本。
+在登录完成后ezEngage 会将用户的认证信息发送到该URL, 该脚本接受认证信息，并发送请求到 ezEngage 的 RESTful API, 来获取用户档案。</p>
+<p>一般来说，可以将该脚本放在你的网站的根目录下,并起类似 <em>ezengage_token.php</em> 这样的名字。</p>
+<p>具体来说，用户在ezEngage 完成认证过程后，一个POST 请求将会发送到 <cite>token_url</cite> ，请求包含一个参数 <cite>token</cite> ,
+在处理程序中，你应该提取出 <cite>token</cite> 参数，然后使用该token 访问 <a class="reference internal" href="api.html#api-get-profile"><em>Get Profile API</em></a> 来获得登录用户的信息。</p>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">token 是一次性的，使用token 请求 <a class="reference internal" href="api.html#api-get-profile"><em>Get Profile API</em></a> 一次后该token 就失效了。</p>
+</div>
+<p>获取到用户信息后，你可以将用户信息保存到数据库。
+你可以希望创建一个本地用户，并将其和ezEngage Profile 关联起来。
+用户信息中的 <cite>identity</cite> 可以唯一标识一个用户。 (也就是说如果两次获得的用户信息中 <cite>identity</cite> 字段是一样的，那么表示两次登录的是同一个用户）</p>
+</div>
+<div class="section" id="id3">
+<h2>示例代码<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p>在我们的GitHub 代码仓库里面可以找到 <cite>token_url</cite> 的示例代码。</p>
+<p><a class="reference external" href="https://github.com/ezengage/ezengage-sample-code/">ezEngage 示例代码仓库</a> 。</p>
+<p>目前只包含 php 的代码示例。</p>
 </div>
 </div>
 
@@ -142,18 +89,19 @@
             </a></p>
   <h3><a href="../index.html">內容目录</a></h3>
   <ul>
-<li><a class="reference internal" href="#">供应商(Provider)</a><ul>
-<li><a class="reference internal" href="#ezengage">ezEngage 支持的供应商</a></li>
+<li><a class="reference internal" href="#">服务器端集成</a><ul>
+<li><a class="reference internal" href="#token-url">token_url</a></li>
+<li><a class="reference internal" href="#id3">示例代码</a></li>
 </ul>
 </li>
 </ul>
 
   <h4>上一个主题</h4>
-  <p class="topless"><a href="../faq.html"
-                        title="上一章">常见问题</a></p>
+  <p class="topless"><a href="widget.html"
+                        title="上一章">登录Widget</a></p>
   <h4>下一个主题</h4>
-  <p class="topless"><a href="sinaweibo.html"
-                        title="下一章">新浪微博配置指南</a></p>
+  <p class="topless"><a href="api.html"
+                        title="下一章">RESTful API</a></p>
 <div id="searchbox" style="display: none">
   <h3>快速搜索</h3>
     <form class="search" action="../search.html" method="get">
@@ -175,10 +123,10 @@
       <h3>导航</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="sinaweibo.html" title="新浪微博配置指南"
+          <a href="api.html" title="RESTful API"
              >下一页</a></li>
         <li class="right" >
-          <a href="../faq.html" title="常见问题"
+          <a href="widget.html" title="登录Widget"
              >上一页</a> |</li>
     <li><a id="home-link" href="http://ezengage.com/">ezEngage 主页</a> &nbsp;|&nbsp; </li>
     

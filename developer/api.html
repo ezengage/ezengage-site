@@ -1,0 +1,256 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>RESTful API &mdash; ezEngage 用户手册</title>
+    <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="top" title="ezEngage 用户手册" href="../index.html" />
+    <link rel="prev" title="服务器端集成" href="token_url.html" />
+ 
+
+<link rel="stylesheet" href="../_static/ezengage.css" type="text/css" />
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="token_url.html" title="服务器端集成"
+             accesskey="P">上一页</a></li>
+    <li><a id="home-link" href="http://ezengage.com/">ezEngage 主页</a> &nbsp;|&nbsp; </li>
+    
+        <li><a href="../index.html">ezEngage 用户手册</a> &raquo;</li>
+ 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="restful-api">
+<h1>RESTful API<a class="headerlink" href="#restful-api" title="永久链接至标题">¶</a></h1>
+<p>ezEngage 提供RESTful API 来读取用户认证信息和推送消息到社交网络。</p>
+<p>使用RESTful API 需要你能够发送HTTP GET/POST 请求，并能解析JSON格式的响应数据。</p>
+<p>在发送请求时需要用到的你的ezEngage APP Key。(参考: <a class="reference internal" href="../manual.html#find-ezengage-app-info"><em>在哪里可以找到应用信息?</em></a>)</p>
+<div class="section" id="get-profile">
+<span id="api-get-profile"></span><h2>Get Profile<a class="headerlink" href="#get-profile" title="永久链接至标题">¶</a></h2>
+<p>通过token获取用户档案</p>
+<div class="highlight-python"><pre>GET  http://api.ezengage.com/api/v1/profile.json?app_key={app_key}&amp;token={token}</pre>
+</div>
+<p>其中参数 token 为 <cite>token_url</cite> 接受到的token, app_key 为你的应用的app key 。</p>
+<p>返回代码:</p>
+<ul class="simple">
+<li>200 OK 表示成功</li>
+<li>其他代码都表示错误</li>
+</ul>
+<p>返回结果格式示例:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&quot;display_name&quot;</span><span class="p">:</span> <span class="s">&quot;ezEngage&quot;</span><span class="p">,</span>
+    <span class="s">&quot;gender&quot;</span><span class="p">:</span> <span class="s">&quot;male&quot;</span><span class="p">,</span>
+    <span class="s">&quot;preferred_username&quot;</span><span class="p">:</span> <span class="s">&quot;ezEngage&quot;</span><span class="p">,</span>
+    <span class="s">&quot;avatar_url&quot;</span><span class="p">:</span> <span class="s">&quot;http://tp2.sinaimg.cn/1934046393/50/1298645552/1&quot;</span><span class="p">,</span>
+    <span class="s">&quot;provider_code&quot;</span><span class="p">:</span> <span class="s">&quot;sinaweibo&quot;</span><span class="p">,</span>
+    <span class="s">&quot;provider_name&quot;</span><span class="p">:</span> <span class="s">&quot;新浪微博&quot;</span><span class="p">,</span>
+    <span class="s">&quot;identity&quot;</span><span class="p">:</span> <span class="s">&quot;http://t.sina.com.cn/1934046393&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="section" id="profile">
+<h3>Profile 字段说明<a class="headerlink" href="#profile" title="永久链接至标题">¶</a></h3>
+<p>下面的表格列出了返回的用户档案中各个字段的含义。</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="22%" />
+<col width="54%" />
+<col width="24%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">字段</th>
+<th class="head">描述</th>
+<th class="head">可用性</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>identity</td>
+<td>用户的Identity</td>
+<td>总是可用</td>
+</tr>
+<tr><td>provider_code</td>
+<td>供应商代码</td>
+<td>总是可用</td>
+</tr>
+<tr><td>provider_name</td>
+<td>供应商的的名称,可以显示给用户</td>
+<td>总是可用</td>
+</tr>
+<tr><td>preferred_username</td>
+<td>建议使用的用户名</td>
+<td>总是可用</td>
+</tr>
+<tr><td>display_name</td>
+<td>用于显示的名称,可以作昵称之类的用途</td>
+<td>总是可用</td>
+</tr>
+<tr><td>name</td>
+<td>姓名</td>
+<td>人人网</td>
+</tr>
+<tr><td>gender</td>
+<td>性别</td>
+<td>大部分可用</td>
+</tr>
+<tr><td>avatar_url</td>
+<td>头像链接</td>
+<td>大部分可用</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="update-status">
+<h2>Update Status<a class="headerlink" href="#update-status" title="永久链接至标题">¶</a></h2>
+<p>推送消息到微博或社交网络</p>
+<div class="highlight-python"><pre>POST http://api.ezengage.com/api/v1/status.json</pre>
+</div>
+<p>请求参数:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="23%" />
+<col width="51%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">字段</th>
+<th class="head">是否必需</th>
+<th class="head">意义</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>identity</td>
+<td>是</td>
+<td>用户的identity</td>
+</tr>
+<tr><td>status</td>
+<td>是</td>
+<td>要发送的消息</td>
+</tr>
+<tr><td>app_key</td>
+<td>是</td>
+<td>你的应用的app key</td>
+</tr>
+<tr><td>long</td>
+<td>否</td>
+<td>用户的位置信息(经度)</td>
+</tr>
+<tr><td>lat</td>
+<td>否</td>
+<td>用户的位置信息(纬度)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">status 字段的长度如果超过了供应商的限制（比如新浪微薄的140字), ezEngage 会在发送前进行截断。
+经度和纬度只有部分供应商支持，不支持的供应商这两个参数将被忽略。</p>
+</div>
+<p>返回状态码:</p>
+<ul class="simple">
+<li>201 Created  发送成功</li>
+<li>其他代码都表示错误</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="../index.html">內容目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">RESTful API</a><ul>
+<li><a class="reference internal" href="#get-profile">Get Profile</a><ul>
+<li><a class="reference internal" href="#profile">Profile 字段说明</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#update-status">Update Status</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="token_url.html"
+                        title="上一章">服务器端集成</a></p>
+<div id="searchbox" style="display: none">
+  <h3>快速搜索</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="搜索" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    输入相关的模块，术语，类或者函数名称进行搜索
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="token_url.html" title="服务器端集成"
+             >上一页</a></li>
+    <li><a id="home-link" href="http://ezengage.com/">ezEngage 主页</a> &nbsp;|&nbsp; </li>
+    
+        <li><a href="../index.html">ezEngage 用户手册</a> &raquo;</li>
+ 
+      </ul>
+    </div>
+
+    <div class="footer">
+        &copy; 版权所有 2011, ezEngage Team.
+    </div>
+<script type="text/javascript"> 
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20845547-3']);
+    _gaq.push(['_trackPageview']);
+ 
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script> 
+
+  </body>
+</html>
