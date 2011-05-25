@@ -5,18 +5,18 @@ ezEngage *登录Widget* 可以在你的网站上嵌入ezEngage的登录界面，
 
 Widget中显示的 :ref:`供应商列表<provider-list>` 可以在ezEngage管理中心配置。
 
+.. _embed-login-widget:
 
 在网站上加入登录Widget
 -----------------------------
 
-
 创建并配置ezEngage应用
 ~~~~~~~~~~~~~~~~~~~~~~~~
-如果你还没有注册 `ezEngage <http://ezengage.com/signup/>`_ , 请先注册并 :ref:`创建一个ezEngage 应用 <create-ezengage-app>` 。
 
-在我们支持 :ref:`供应商列表<provider-list>` 中选择一个或多个，并做对应的配置。
+* 如果你还没有创建ezEngage 应用，请 :ref:`创建一个ezEngage 应用 <create-ezengage-app>` , 并记录下来的你 `App Domain` 。
+* 如果你已经创建了ezEngage 应用，请 :ref:`找到应用信息 <find-ezengage-app-info>`, 并记录下 `App Domain` 。
 
-请记录下你的应用的 `App ID`, `App Domain`, `App Key`, 在下面的步骤中将需要使用它们。
+如果还还没有配置供应商,请在我们支持 :ref:`供应商列表<provider-list>` 中选择一个或多个，并做对应的配置。
 
 嵌入Widget
 ~~~~~~~~~~~~~~~~~~~~~~~

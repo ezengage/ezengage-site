@@ -50,6 +50,7 @@ ezEngage 用户手册
    :maxdepth: 2
    :glob:
  
+   developer/index
    developer/widget
    developer/token_url
    developer/api
