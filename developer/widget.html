@@ -25,7 +25,7 @@
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="top" title="ezEngage 用户手册" href="../index.html" />
     <link rel="next" title="服务器端集成" href="token_url.html" />
-    <link rel="prev" title="WordPress 系统集成" href="../plugin/wordpress.html" />
+    <link rel="prev" title="RESTful API" href="api.html" />
  
 
 <link rel="stylesheet" href="../_static/ezengage.css" type="text/css" />
@@ -39,7 +39,7 @@
           <a href="token_url.html" title="服务器端集成"
              accesskey="N">下一页</a></li>
         <li class="right" >
-          <a href="../plugin/wordpress.html" title="WordPress 系统集成"
+          <a href="api.html" title="RESTful API"
              accesskey="P">上一页</a> |</li>
     <li><a id="home-link" href="http://ezengage.com/">ezEngage 主页</a> &nbsp;|&nbsp; </li>
     
@@ -58,16 +58,18 @@
 <p>ezEngage <em>登录Widget</em> 可以在你的网站上嵌入ezEngage的登录界面，
 让用户可以直接使用已有的社交网络账号登录到你的站点。</p>
 <p>Widget中显示的 <a class="reference internal" href="../provider/index.html#provider-list"><em>供应商列表</em></a> 可以在ezEngage管理中心配置。</p>
-<div class="section" id="id1">
-<h2>在网站上加入登录Widget<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<div class="section" id="embed-login-widget">
+<span id="id1"></span><h2>在网站上加入登录Widget<a class="headerlink" href="#embed-login-widget" title="永久链接至标题">¶</a></h2>
 <div class="section" id="ezengage">
 <h3>创建并配置ezEngage应用<a class="headerlink" href="#ezengage" title="永久链接至标题">¶</a></h3>
-<p>如果你还没有注册 <a class="reference external" href="http://ezengage.com/signup/">ezEngage</a> , 请先注册并 <a class="reference internal" href="../manual.html#create-ezengage-app"><em>创建一个ezEngage 应用</em></a> 。</p>
-<p>在我们支持 <a class="reference internal" href="../provider/index.html#provider-list"><em>供应商列表</em></a> 中选择一个或多个，并做对应的配置。</p>
-<p>请记录下你的应用的 <cite>App ID</cite>, <cite>App Domain</cite>, <cite>App Key</cite>, 在下面的步骤中将需要使用它们。</p>
+<ul class="simple">
+<li>如果你还没有创建ezEngage 应用，请 <a class="reference internal" href="../manual.html#create-ezengage-app"><em>创建一个ezEngage 应用</em></a> , 并记录下来的你 <cite>App Domain</cite> 。</li>
+<li>如果你已经创建了ezEngage 应用，请 <a class="reference internal" href="../manual.html#find-ezengage-app-info"><em>找到应用信息</em></a>, 并记录下 <cite>App Domain</cite> 。</li>
+</ul>
+<p>如果还还没有配置供应商,请在我们支持 <a class="reference internal" href="../provider/index.html#provider-list"><em>供应商列表</em></a> 中选择一个或多个，并做对应的配置。</p>
 </div>
-<div class="section" id="id3">
-<h3>嵌入Widget<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id2">
+<h3>嵌入Widget<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
 <p>我们通过JavaScript脚本来嵌入ezEngage 登录Widget。</p>
 <p>在你的网站的合适的地方，比如说网站的登录和注册页面, 加入下面的HTML代码。</p>
 <div class="admonition note">
@@ -128,8 +130,8 @@
   })();
 </script></div>
 </div>
-<div class="section" id="id4">
-<h2>Widget配置参数<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id3">
+<h2>Widget配置参数<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
 <p>Widget 共有6个参数，其中2个是必需的参数，其余4个是可选。</p>
 <table border="1" class="docutils">
 <colgroup>
@@ -185,19 +187,19 @@
   <h3><a href="../index.html">內容目录</a></h3>
   <ul>
 <li><a class="reference internal" href="#">登录Widget</a><ul>
-<li><a class="reference internal" href="#id1">在网站上加入登录Widget</a><ul>
+<li><a class="reference internal" href="#embed-login-widget">在网站上加入登录Widget</a><ul>
 <li><a class="reference internal" href="#ezengage">创建并配置ezEngage应用</a></li>
-<li><a class="reference internal" href="#id3">嵌入Widget</a></li>
+<li><a class="reference internal" href="#id2">嵌入Widget</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id4">Widget配置参数</a></li>
+<li><a class="reference internal" href="#id3">Widget配置参数</a></li>
 </ul>
 </li>
 </ul>
 
   <h4>上一个主题</h4>
-  <p class="topless"><a href="../plugin/wordpress.html"
-                        title="上一章">WordPress 系统集成</a></p>
+  <p class="topless"><a href="api.html"
+                        title="上一章">RESTful API</a></p>
   <h4>下一个主题</h4>
   <p class="topless"><a href="token_url.html"
                         title="下一章">服务器端集成</a></p>
@@ -225,7 +227,7 @@
           <a href="token_url.html" title="服务器端集成"
              >下一页</a></li>
         <li class="right" >
-          <a href="../plugin/wordpress.html" title="WordPress 系统集成"
+          <a href="api.html" title="RESTful API"
              >上一页</a> |</li>
     <li><a id="home-link" href="http://ezengage.com/">ezEngage 主页</a> &nbsp;|&nbsp; </li>
     

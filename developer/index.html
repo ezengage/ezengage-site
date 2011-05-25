@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>ezEngage API &mdash; ezEngage 用户手册</title>
+    <title>ezEngage 开发者指南 &mdash; ezEngage 用户手册</title>
     <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript">
@@ -24,7 +24,7 @@
     <script type="text/javascript" src="../_static/translations.js"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="top" title="ezEngage 用户手册" href="../index.html" />
-    <link rel="next" title="如何将 ezEngage 集成到网站中?" href="integration.html" />
+    <link rel="next" title="登录Widget" href="widget.html" />
     <link rel="prev" title="WordPress 系统集成" href="../plugin/wordpress.html" />
  
 
@@ -36,7 +36,7 @@
       <h3>导航</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="integration.html" title="如何将 ezEngage 集成到网站中?"
+          <a href="widget.html" title="登录Widget"
              accesskey="N">下一页</a></li>
         <li class="right" >
           <a href="../plugin/wordpress.html" title="WordPress 系统集成"
@@ -53,8 +53,55 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="ezengage-api">
-<h1>ezEngage API<a class="headerlink" href="#ezengage-api" title="永久链接至标题">¶</a></h1>
+  <div class="section" id="ezengage">
+<h1>ezEngage 开发者指南<a class="headerlink" href="#ezengage" title="永久链接至标题">¶</a></h1>
+<p>这份文档是提供给希望在自己开发的网站中集成ezEngage服务的用户阅读的。</p>
+<p>通过使用ezEngage 提供的RESTful API和Widget, 你的站点可以很方便的接入ezEngage系统，让你的网站支持使用多个社交网络和微博(包括新浪微博，人人网，腾讯微博, QQ, 豆瓣等)的账号登录到你的站点，并推送用户活动到这些社交网络。</p>
+<div class="section" id="id1">
+<h2>网站集成教程<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<p>下面的教程会指导你如何在网站上集成ezEngage 服务。</p>
+<div class="section" id="id2">
+<h3>创建并配置ezEngage应用<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
+<p>同使用插件一样，你需要注册ezEngage 账号，并创建和配置一个应用。</p>
+<p>如果你还没有注册 <a class="reference external" href="http://ezengage.com/signup/">ezEngage</a> , 请先注册并 <a class="reference internal" href="../manual.html#create-ezengage-app"><em>创建一个ezEngage 应用</em></a> 。</p>
+<p>在我们支持 <a class="reference internal" href="../provider/index.html#provider-list"><em>供应商列表</em></a> 中选择一个或多个，并做对应的配置。</p>
+<p><a class="reference internal" href="../manual.html#find-ezengage-app-info"><em>找到你创建的应用的信息</em></a>, 并记录下你的应用的 <cite>App ID</cite>, <cite>App Domain</cite>, <cite>App Key</cite>, 在下面的集成过程中将需要使用它们。</p>
+</div>
+<div class="section" id="widget">
+<h3>在网站的合适位置嵌入登录Widget<a class="headerlink" href="#widget" title="永久链接至标题">¶</a></h3>
+<p>在你网站的合适位置嵌入登录Widget.
+详细请阅读 <a class="reference internal" href="widget.html#embed-login-widget"><em>在网站上加入登录Widget</em></a> 。</p>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">这个步骤需要用到的 Token URL 还没有实现，你可以先随便写一个，看一下Widget的效果。</p>
+</div>
+</div>
+<div class="section" id="token-url">
+<h3>实现Token Url处理逻辑<a class="headerlink" href="#token-url" title="永久链接至标题">¶</a></h3>
+<p>这个步骤需要你编写代码，实现Token URL 的处理逻辑。</p>
+<p>详细请阅读 <a class="reference internal" href="token_url.html#token-url"><em>Token URL</em></a> 。</p>
+</div>
+<div class="section" id="id4">
+<h3>修改Widget 代码<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
+<p>假设你的网站的地址是 <em>http://www.example.com</em> , 你实现的 <cite>Token URL</cite> 的地址是 <em>http://www.example.com/ezengage_token.php</em> 。
+那么请将你的Widget 的代码中的 <strong>ezengage_token_cb</strong> 变量值修改为 <em>http://www.example.com/ezengage_token.php</em> 。</p>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">上面使用的地址仅仅是示例，请将其替换成你的 <strong>实际</strong> 的Token URL 的地址。</p>
+</div>
+<p>修改完 <strong>ezengage_token_cb</strong> 后你的站点就完成ezEngage 接入了。</p>
+</div>
+<div class="section" id="id5">
+<h3>推送用户活动到社交网络<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
+<p>你可以推送用户的活动到社交网络, 比如说用户的发帖，购买，评论等等。</p>
+<p>你可以调用 <a class="reference internal" href="api.html#api-update-status"><em>Update Status</em></a> 来推送消息。</p>
+<ol class="arabic simple">
+<li>从你的数据中找出用户对应的 ezEngage <cite>Identity</cite> , 这个值作为参数 <em>identity</em> 。</li>
+<li>将你需要推送的内容组成一个字符串(UTF-8编码), 这个值作为参数 <em>status</em> 。</li>
+<li>使用参数 <em>identity</em> , 参数 <em>status</em> 以及你的 ezEngage APP Key 调用 Update Status API 。</li>
+</ol>
+</div>
+</div>
 </div>
 
 
@@ -66,12 +113,27 @@
             <p class="logo"><a href="../index.html">
               <img class="logo" src="../_static/logo.png" alt="Logo"/>
             </a></p>
+  <h3><a href="../index.html">內容目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">ezEngage 开发者指南</a><ul>
+<li><a class="reference internal" href="#id1">网站集成教程</a><ul>
+<li><a class="reference internal" href="#id2">创建并配置ezEngage应用</a></li>
+<li><a class="reference internal" href="#widget">在网站的合适位置嵌入登录Widget</a></li>
+<li><a class="reference internal" href="#token-url">实现Token Url处理逻辑</a></li>
+<li><a class="reference internal" href="#id4">修改Widget 代码</a></li>
+<li><a class="reference internal" href="#id5">推送用户活动到社交网络</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
   <h4>上一个主题</h4>
   <p class="topless"><a href="../plugin/wordpress.html"
                         title="上一章">WordPress 系统集成</a></p>
   <h4>下一个主题</h4>
-  <p class="topless"><a href="integration.html"
-                        title="下一章">如何将 ezEngage 集成到网站中?</a></p>
+  <p class="topless"><a href="widget.html"
+                        title="下一章">登录Widget</a></p>
 <div id="searchbox" style="display: none">
   <h3>快速搜索</h3>
     <form class="search" action="../search.html" method="get">
@@ -93,7 +155,7 @@
       <h3>导航</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="integration.html" title="如何将 ezEngage 集成到网站中?"
+          <a href="widget.html" title="登录Widget"
              >下一页</a></li>
         <li class="right" >
           <a href="../plugin/wordpress.html" title="WordPress 系统集成"

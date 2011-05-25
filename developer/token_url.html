@@ -56,22 +56,36 @@
   <div class="section" id="id1">
 <h1>服务器端集成<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
 <div class="section" id="token-url">
-<span id="id2"></span><h2>token_url<a class="headerlink" href="#token-url" title="永久链接至标题">¶</a></h2>
+<span id="id2"></span><h2>Token URL<a class="headerlink" href="#token-url" title="永久链接至标题">¶</a></h2>
 <p><cite>token_url</cite> 是你的网站是的的一个处理程序。取决你使用的编程语言，它可能是一个PHP页面，CGI脚本或者JSP脚本。
 在登录完成后ezEngage 会将用户的认证信息发送到该URL, 该脚本接受认证信息，并发送请求到 ezEngage 的 RESTful API, 来获取用户档案。</p>
 <p>一般来说，可以将该脚本放在你的网站的根目录下,并起类似 <em>ezengage_token.php</em> 这样的名字。</p>
+</div>
+<div class="section" id="id3">
+<h2>Token URL 处理逻辑<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
 <p>具体来说，用户在ezEngage 完成认证过程后，一个POST 请求将会发送到 <cite>token_url</cite> ，请求包含一个参数 <cite>token</cite> ,
-在处理程序中，你应该提取出 <cite>token</cite> 参数，然后使用该token 访问 <a class="reference internal" href="api.html#api-get-profile"><em>Get Profile API</em></a> 来获得登录用户的信息。</p>
+在你的Token URL 处理程序中，你需要做下面的几件事情</p>
+<ol class="arabic simple">
+<li>从 <em>POST</em> 请求中提取出 <cite>token</cite> 参数</li>
+<li>使用该token 访问 <a class="reference internal" href="api.html#api-get-profile"><em>Get Profile API</em></a> 来获得登录用户的信息 (ezEngage Profile)。</li>
+<li>(可选) 将用户信息(ezEngage Profile)保存到你的数据库中。</li>
+<li>一般来说你的站点会有自己的用户数据库, 你应该建立一个你的站点用户和ezEngage Profile 之间的关联关系。<ul>
+<li>如果发现获得 ezEngage Profile 没有和任何用户关联，你可以自动创建一个本地用户(或者要求用户完成你的站点的注册)，然后将其和 ezEngage Profile 关联起来。</li>
+<li>如果说该ezEngage Profile 已经和你的站点的用户管理起来了，那就登录对应的用户。</li>
+</ul>
+</li>
+</ol>
 <div class="admonition note">
 <p class="first admonition-title">注解</p>
 <p class="last">token 是一次性的，使用token 请求 <a class="reference internal" href="api.html#api-get-profile"><em>Get Profile API</em></a> 一次后该token 就失效了。</p>
 </div>
-<p>获取到用户信息后，你可以将用户信息保存到数据库。
-你可以希望创建一个本地用户，并将其和ezEngage Profile 关联起来。
-用户信息中的 <cite>identity</cite> 可以唯一标识一个用户。 (也就是说如果两次获得的用户信息中 <cite>identity</cite> 字段是一样的，那么表示两次登录的是同一个用户）</p>
+<div class="admonition note">
+<p class="first admonition-title">注解</p>
+<p class="last">ezEngage Profile 中的 <cite>identity</cite> 可以唯一标识一个用户, 也就是说如果两次获得的用户信息中 <cite>identity</cite> 字段是一样的，那么表示两次登录的是同一个用户。</p>
 </div>
-<div class="section" id="id3">
-<h2>示例代码<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="id4">
+<h2>示例代码<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
 <p>在我们的GitHub 代码仓库里面可以找到 <cite>token_url</cite> 的示例代码。</p>
 <p><a class="reference external" href="https://github.com/ezengage/ezengage-sample-code/">ezEngage 示例代码仓库</a> 。</p>
 <p>目前只包含 php 的代码示例。</p>
@@ -90,8 +104,9 @@
   <h3><a href="../index.html">內容目录</a></h3>
   <ul>
 <li><a class="reference internal" href="#">服务器端集成</a><ul>
-<li><a class="reference internal" href="#token-url">token_url</a></li>
-<li><a class="reference internal" href="#id3">示例代码</a></li>
+<li><a class="reference internal" href="#token-url">Token URL</a></li>
+<li><a class="reference internal" href="#id3">Token URL 处理逻辑</a></li>
+<li><a class="reference internal" href="#id4">示例代码</a></li>
 </ul>
 </li>
 </ul>
