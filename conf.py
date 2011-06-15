@@ -217,3 +217,13 @@ man_pages = [
     ('index', 'ezengage-doc', u'ezengage-doc Documentation',
      [u'ftao'], 1)
 ]
+
+
+def setup(app):
+    app.connect('build-finished', generate_sitemap)
+
+def generate_sitemap(app, ex=None):
+    if ex is None:
+        import os
+        os.system('./sitemap_gen.py --config=sitemap_config.xml')
+        
