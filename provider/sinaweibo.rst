@@ -9,17 +9,17 @@
 创建新浪微博应用
 =================================
 .. note::
-   该文档部分内容参考了 `新浪微博开放平台新手指南 <http://open.t.sina.com.cn/wiki/index.php/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97>`_
+   该文档部分内容参考了 `新浪微博开放平台新手指南 <http://open.weibo.com/wiki/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97>`_
 
 打开新浪微博开放平台
 --------------------------
-请通过浏览器访问 `新浪微博开发平台 <http://open.t.sina.com.cn/>`_
+请通过浏览器访问 `新浪微博开发平台 <http://open.weibo.com/>`_
 
 登录新浪微博账号
 ---------------------------
 请使用你的新浪微博账号登录。
 
-.. image:: http://www.s2forum.org/wikipic/lc-denglu.png
+.. image:: http://www.sinaimg.cn/blog/developer/wiki/lc-denglu.png
 
 设置开发者信息
 --------------------------
@@ -32,7 +32,7 @@
 --------------------------
 在开放平台页面右侧点击 *创建应用*
 
-.. image:: http://www.s2forum.org/wikipic/lc-chuangjian.png
+.. image:: http://www.sinaimg.cn/blog/developer/wiki/lc-chuangjian.png
 资料填写
 
 * 图标: 使用你的网站的Logo 即可.
